@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Katachi — Design furniture for spaces that breathe.",
   description: "Architected in Belgium, built to last—timeless pieces.",
-  generator: "v0.app",
+  generator: "AEON",
   alternates: {
     canonical: "https://katachi.example/",
   },

@@ -37,9 +37,9 @@ export function Header() {
                 "text-xl lg:text-2xl font-bold tracking-tight transition-colors",
                 isScrolled ? "text-neutral-900 hover:text-neutral-700" : "text-white hover:text-white/80",
               )}
-              aria-label="KATACHI Studio Home"
+              aria-label="BGW Doors Home"
             >
-              KATACHI
+              BGW Doors
             </a>
           </motion.div>
         </div>

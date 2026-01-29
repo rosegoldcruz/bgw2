@@ -70,10 +70,10 @@ export function HeroSection() {
         <div className="container-custom text-center text-white">
           <Reveal>
             <h1 className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-none tracking-tight mb-6">
-              <AnimatedText text="Design furniture for" delay={0.5} />
+              <AnimatedText text="Elevated doors for" delay={0.5} />
               <br />
               <span className="italic font-light">
-                <AnimatedText text="spaces that breathe." delay={1.1} />
+                <AnimatedText text="modern spaces" delay={1.1} />
               </span>
             </h1>
           </Reveal>
@@ -85,7 +85,20 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
-              Designed in Belgium, crafted to endure — timeless pieces for modern living.
+              Design-driven. Project-ready. Built to last.
+            </motion.p>
+          </Reveal>
+
+          <Reveal delay={0.3}>
+            <motion.p
+              className="text-lg md:text-xl text-white/90 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.9, ease: [0.21, 0.47, 0.32, 0.98] }}
+            >
+              Call Us: (909) 789-1818<br />
+              Open Mon – Fri<br />
+              753 E Francis St, Ontario, CA
             </motion.p>
           </Reveal>
         </div>
@@ -102,15 +115,15 @@ export function HeroSection() {
           <div className="flex items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <PackageCheck className="w-4 h-4 text-green-400" />
-              <span className="text-sm">Free shipping</span>
+              <span className="text-sm">BGW Doors</span>
             </div>
             <div className="flex items-center gap-2">
               <Rocket className="w-4 h-4 text-amber-400" />
-              <span className="text-sm">Delivered in 6 weeks</span>
+              <span className="text-sm">Average Nationwide Shipping — 5–8 Business Days</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-blue-400" />
-              <span className="text-sm">Lifetime guarantee</span>
+              <span className="text-sm">24/7 Support</span>
             </div>
           </div>
         </BlurPanel>
