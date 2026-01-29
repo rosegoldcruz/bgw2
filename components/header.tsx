@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 export function Header() {
@@ -34,12 +35,18 @@ export function Header() {
             <a
               href="#"
               className={cn(
-                "text-xl lg:text-2xl font-bold tracking-tight transition-colors",
-                isScrolled ? "text-neutral-900 hover:text-neutral-700" : "text-white hover:text-white/80",
+                "flex items-center transition-opacity hover:opacity-80",
               )}
               aria-label="BGW Doors Home"
             >
-              BGW Doors
+              <Image
+                src="/bgw.png"
+                alt="BGW Doors"
+                width={160}
+                height={40}
+                className="h-8 md:h-10 w-auto"
+                priority
+              />
             </a>
           </motion.div>
         </div>
