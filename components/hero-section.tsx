@@ -52,8 +52,8 @@ export function HeroSection() {
         transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
       >
         <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/u3195299943_une_vue_sur_lespace_toil_--ar_11_--sref_httpss.mj_f1cd1575-c301-46fa-8b30-665ae1ab22a0_3_bloom_subtle_6x.png-EslKdscYhdWOUeP4RBajclEejxh8iO.jpeg"
-          alt="KATACHI Studio - Elegant interior with sage green walls and terracotta furniture overlooking surreal landscape"
+          src="/bgw-hero.png"
+          alt="BGW Doors - Premium door installations and modern interior spaces"
           fill
           className="object-cover"
           priority
@@ -115,7 +115,7 @@ export function HeroSection() {
           <div className="flex items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <PackageCheck className="w-4 h-4 text-green-400" />
-              <span className="text-sm">BGW Doors</span>
+              <span className="text-sm">Over 1M BGW Doors Sold</span>
             </div>
             <div className="flex items-center gap-2">
               <Rocket className="w-4 h-4 text-amber-400" />
