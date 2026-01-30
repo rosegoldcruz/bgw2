@@ -43,6 +43,25 @@ export function HeroSection() {
 
   return (
     <section ref={containerRef} className="relative min-h-screen overflow-hidden">
+      {/* Background Image - Full Screen */}
+      <motion.div
+        className="absolute inset-0"
+        style={{ scale: imageScale, y: imageY }}
+        initial={{ scale: 1.05 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
+      >
+        <Image
+          src="/bgw-hero.png"
+          alt="BGW Doors - Premium door installations and modern interior spaces"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/20" />
+      </motion.div>
+
       {/* Content */}
       <motion.div
         className="relative z-10 h-full min-h-screen flex items-center"
@@ -87,25 +106,8 @@ export function HeroSection() {
               </Reveal>
             </div>
 
-            {/* Right Column - Door Image */}
-            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] flex items-center justify-center">
-              <motion.div
-                className="relative w-full h-full"
-                style={{ scale: imageScale, y: imageY }}
-                initial={{ scale: 1.05 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-              >
-                <Image
-                  src="/bgw-hero.png"
-                  alt="BGW Doors - Premium door installations and modern interior spaces"
-                  fill
-                  className="object-contain"
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </motion.div>
-            </div>
+            {/* Right Column - Empty (image is background) */}
+            <div className="hidden lg:block" />
           </div>
         </div>
       </motion.div>
