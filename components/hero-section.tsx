@@ -74,7 +74,7 @@ export function HeroSection() {
             <div className="text-center lg:text-left text-white py-20 lg:py-0 max-w-2xl">
               <Reveal>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight mb-6 drop-shadow-lg">
-                  <span className="block">
+                  <span className="block whitespace-nowrap">
                     <AnimatedText text="Elevated doors for" delay={0.5} />
                   </span>
                   <span className="italic font-light block">
