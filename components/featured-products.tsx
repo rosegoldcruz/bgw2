@@ -8,10 +8,10 @@ import { Reveal } from "./reveal"
 
 const featuredProducts = [
   {
-    id: "4",
-    name: "Verde Modular Chair",
+    id: "1",
+    name: "Fiberglass Doors",
     price: "€4,890",
-    image: "/green-velvet-modular-chair.png",
+    image: "/fiberglass.png",
     badge: "New" as const,
     materials: ["Copper Frame", "Premium Velvet"],
     swatches: [
@@ -20,17 +20,17 @@ const featuredProducts = [
       { name: "Copper", color: "#B87333" },
     ],
     quickLookImages: [
-      "/green-velvet-modular-chair.png",
+      "/fiberglass.png",
       "/placeholder.svg?height=600&width=600",
       "/placeholder.svg?height=600&width=600",
     ],
     dimensions: "W: 180cm × D: 90cm × H: 75cm",
   },
   {
-    id: "7",
-    name: "Terracotta Cloud Chair",
+    id: "2",
+    name: "Wood Doors",
     price: "€5,250",
-    image: "/terracotta-cloud-chair.png",
+    image: "/wood.png",
     badge: "New" as const,
     materials: ["Copper Frame", "Terracotta Velvet"],
     swatches: [
@@ -39,17 +39,17 @@ const featuredProducts = [
       { name: "Copper", color: "#B87333" },
     ],
     quickLookImages: [
-      "/terracotta-cloud-chair.png",
+      "/wood.png",
       "/placeholder.svg?height=600&width=600",
       "/placeholder.svg?height=600&width=600",
     ],
     dimensions: "W: 95cm × D: 85cm × H: 80cm",
   },
   {
-    id: "8",
-    name: "Sage Copper Lounge",
+    id: "3",
+    name: "Iron Doors",
     price: "€4,675",
-    image: "/sage-copper-lounge-chair.png",
+    image: "/iron.png",
     badge: "Limited" as const,
     materials: ["Copper Frame", "Sage Velvet"],
     swatches: [
@@ -58,7 +58,7 @@ const featuredProducts = [
       { name: "Copper", color: "#B87333" },
     ],
     quickLookImages: [
-      "/sage-copper-lounge-chair.png",
+      "/iron.png",
       "/placeholder.svg?height=600&width=600",
       "/placeholder.svg?height=600&width=600",
     ],
