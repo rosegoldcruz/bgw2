@@ -6,6 +6,7 @@ import Image from "next/image"
 import { PackageCheck, Rocket, ShieldCheck } from "lucide-react" // Added PackageCheck, Rocket, and ShieldCheck icon imports
 import { Reveal } from "./reveal"
 import { BlurPanel } from "./blur-panel"
+import { Button } from "./ui/button"
 
 export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -73,7 +74,9 @@ export function HeroSection() {
             <div className="text-center lg:text-left text-white py-20 lg:py-0">
               <Reveal>
                 <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-none tracking-tight mb-6">
-                  <AnimatedText text="Elevated doors for" delay={0.5} />
+                  <AnimatedText text="Elevated doors" delay={0.5} />
+                  <br />
+                  <AnimatedText text="for" delay={0.8} />
                   <br />
                   <span className="italic font-light">
                     <AnimatedText text="modern spaces" delay={1.1} />
@@ -94,7 +97,7 @@ export function HeroSection() {
 
               <Reveal delay={0.3}>
                 <motion.p
-                  className="text-lg md:text-xl text-white/90 leading-relaxed"
+                  className="text-lg md:text-xl text-white/90 leading-relaxed mb-8"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.9, ease: [0.21, 0.47, 0.32, 0.98] }}
@@ -103,6 +106,22 @@ export function HeroSection() {
                   Open Mon – Fri<br />
                   753 E Francis St, Ontario, CA
                 </motion.p>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <motion.div
+                  className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 1.1, ease: [0.21, 0.47, 0.32, 0.98] }}
+                >
+                  <Button size="lg" className="bg-white text-neutral-900 hover:bg-white/90">
+                    Shop Doors
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                    View on Your Home
+                  </Button>
+                </motion.div>
               </Reveal>
             </div>
 
