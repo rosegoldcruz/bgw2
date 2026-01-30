@@ -60,7 +60,7 @@ export function HeroSection() {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/30" />
       </motion.div>
 
       {/* Content */}
@@ -71,13 +71,10 @@ export function HeroSection() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Text Content */}
-            <div className="text-center lg:text-left text-white py-20 lg:py-0">
+            <div className="text-center lg:text-left text-white py-20 lg:py-0 max-w-2xl">
               <Reveal>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-none tracking-tight mb-6">
-                  <AnimatedText text="Elevated doors" delay={0.5} />
-                  <br />
-                  <AnimatedText text="for" delay={0.8} />
-                  <br />
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight mb-6 drop-shadow-lg">
+                  <AnimatedText text="Elevated doors for " delay={0.5} />
                   <span className="italic font-light">
                     <AnimatedText text="modern spaces" delay={1.1} />
                   </span>
@@ -86,7 +83,7 @@ export function HeroSection() {
 
               <Reveal delay={0.2}>
                 <motion.p
-                  className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed"
+                  className="text-base md:text-lg text-white/95 mb-8 leading-relaxed drop-shadow-md"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
@@ -97,7 +94,7 @@ export function HeroSection() {
 
               <Reveal delay={0.3}>
                 <motion.p
-                  className="text-lg md:text-xl text-white/90 leading-relaxed mb-8"
+                  className="text-base md:text-lg text-white/95 leading-relaxed mb-8 drop-shadow-md"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.9, ease: [0.21, 0.47, 0.32, 0.98] }}
@@ -115,10 +112,10 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 1.1, ease: [0.21, 0.47, 0.32, 0.98] }}
                 >
-                  <Button size="lg" className="bg-white text-neutral-900 hover:bg-white/90">
+                  <Button size="lg" className="bg-white text-neutral-900 hover:bg-white/90 shadow-lg">
                     Shop Doors
                   </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 shadow-lg">
                     View on Your Home
                   </Button>
                 </motion.div>
