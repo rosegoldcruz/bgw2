@@ -88,9 +88,9 @@ export function HeroSection() {
             </div>
 
             {/* Right Column - Door Image */}
-            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
+            <div className="relative h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] flex items-center justify-center">
               <motion.div
-                className="absolute inset-0 rounded-lg overflow-hidden"
+                className="relative w-full h-full"
                 style={{ scale: imageScale, y: imageY }}
                 initial={{ scale: 1.05 }}
                 animate={{ scale: 1 }}
@@ -100,11 +100,10 @@ export function HeroSection() {
                   src="/bgw-hero.png"
                   alt="BGW Doors - Premium door installations and modern interior spaces"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-black/20" />
               </motion.div>
             </div>
           </div>
