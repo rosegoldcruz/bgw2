@@ -10,7 +10,7 @@ const featuredProducts = [
   {
     id: "1",
     name: "Fiberglass Doors",
-    price: "€4,890",
+    description: "Our fiberglass doors deliver durability, energy efficiency, and low-maintenance performance. Each door features high-density insulated cores, impact-resistant skins, and advanced weather sealing.",
     image: "/fiberglass.png",
     badge: "New" as const,
     materials: ["Copper Frame", "Premium Velvet"],
@@ -29,7 +29,7 @@ const featuredProducts = [
   {
     id: "2",
     name: "Wood Doors",
-    price: "€5,250",
+    description: "Our wood doors deliver natural beauty, warmth, and dependable performance. Each door is crafted from premium hardwoods with engineered cores, reinforced construction, and protective finishes.",
     image: "/wood.png",
     badge: "New" as const,
     materials: ["Copper Frame", "Terracotta Velvet"],
@@ -48,7 +48,7 @@ const featuredProducts = [
   {
     id: "3",
     name: "Iron Doors",
-    price: "€4,675",
+    description: "Our iron doors deliver strength, security, and lasting performance for residential and commercial applications. Each door is built from heavy-duty steel with insulated cores, tempered glass, and advanced weather sealing.",
     image: "/iron.png",
     badge: "Limited" as const,
     materials: ["Copper Frame", "Sage Velvet"],

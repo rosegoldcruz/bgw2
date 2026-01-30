@@ -8,7 +8,7 @@ interface ProductCardProps {
   product: {
     id: string
     name: string
-    price: string
+    description: string
     image: string
     badge?: "New" | "Back in stock" | "Limited"
     materials: string[]
@@ -66,33 +66,32 @@ export function ProductCard({ product, onQuickLook }: ProductCardProps) {
       </div>
 
       {/* Product Info */}
-      <div className="absolute bottom-0 left-0 right-0 p-6">
+      <div className="absolute bottom-0 left-0 right-0 p-6 pb-8">
         <div
-          className="absolute inset-0 backdrop-blur-sm"
+          className="absolute inset-0 backdrop-blur-sm bg-black/40"
           style={{
-            maskImage: "linear-gradient(to top, black 0%, black 60%, transparent 100%)",
-            WebkitMaskImage: "linear-gradient(to top, black 0%, black 60%, transparent 100%)",
+            maskImage: "linear-gradient(to top, black 0%, black 70%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to top, black 0%, black 70%, transparent 100%)",
           }}
         />
         <div
-          className="absolute inset-0 backdrop-blur-md"
+          className="absolute inset-0 backdrop-blur-md bg-black/30"
           style={{
-            maskImage: "linear-gradient(to top, black 0%, black 40%, transparent 80%)",
-            WebkitMaskImage: "linear-gradient(to top, black 0%, black 40%, transparent 80%)",
+            maskImage: "linear-gradient(to top, black 0%, black 50%, transparent 90%)",
+            WebkitMaskImage: "linear-gradient(to top, black 0%, black 50%, transparent 90%)",
           }}
         />
         <div
-          className="absolute inset-0 backdrop-blur-lg"
+          className="absolute inset-0 backdrop-blur-lg bg-black/20"
           style={{
-            maskImage: "linear-gradient(to top, black 0%, black 20%, transparent 60%)",
-            WebkitMaskImage: "linear-gradient(to top, black 0%, black 20%, transparent 60%)",
+            maskImage: "linear-gradient(to top, black 0%, black 30%, transparent 70%)",
+            WebkitMaskImage: "linear-gradient(to top, black 0%, black 30%, transparent 70%)",
           }}
         />
         <div className="relative z-10">
           <div>
-            <h3 className="text-lg font-semibold text-white mb-1 drop-shadow-sm">{product.name}</h3>
-            <p className="text-sm text-white/90 mb-2 drop-shadow-sm">{product.materials.join(", ")}</p>
-            <span className="text-xl font-bold text-white drop-shadow-sm">{product.price}</span>
+            <h3 className="text-xl font-bold text-white mb-3 drop-shadow-sm">{product.name}</h3>
+            <p className="text-sm text-white/95 leading-relaxed drop-shadow-sm">{product.description}</p>
           </div>
         </div>
       </div>
