@@ -59,3 +59,22 @@
   50% { transform: translate(-40%, 40%); }
   100% { transform: translate(0%, 0%); }
 }
+
+/* Chrome edge rim */
+.metallic-frame {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.35),
+    0 0 12px rgba(255,255,255,0.35),
+    inset 0 0 10px rgba(255,255,255,0.25);
+}
+
+/* Slight animated glow pulse */
+@keyframes edgePulse {
+  0%   { box-shadow: 0 0 0 1px rgba(255,255,255,0.25), 0 0 12px rgba(255,255,255,0.35); }
+  50%  { box-shadow: 0 0 0 1px rgba(255,255,255,0.45), 0 0 20px rgba(255,255,255,0.55); }
+  100% { box-shadow: 0 0 0 1px rgba(255,255,255,0.25), 0 0 12px rgba(255,255,255,0.35); }
+}
+
+.metallic-frame {
+  animation: edgePulse 3.5s ease-in-out infinite;
+}
