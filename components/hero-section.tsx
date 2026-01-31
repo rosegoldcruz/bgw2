@@ -75,10 +75,10 @@ export function HeroSection() {
               <Reveal>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight mb-6 drop-shadow-lg">
                   <span className="block whitespace-nowrap">
-                    <AnimatedText text="Elevated doors for" delay={0.5} />
+                    <AnimatedText text="Elevated Doors For" delay={0.5} />
                   </span>
                   <span className="italic font-light block">
-                    <AnimatedText text="modern spaces" delay={1.1} />
+                    <AnimatedText text="Modern Spaces" delay={1.1} />
                   </span>
                 </h1>
               </Reveal>
