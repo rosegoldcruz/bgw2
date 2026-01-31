@@ -125,7 +125,9 @@ export function FeaturedProducts() {
               }}
             >
               <Reveal delay={index * 0.1}>
-                <ProductCard product={product} onQuickLook={handleQuickLook} />
+                <div className="metallic-frame">
+                  <ProductCard product={product} onQuickLook={handleQuickLook} />
+                </div>
               </Reveal>
             </motion.div>
           ))}
