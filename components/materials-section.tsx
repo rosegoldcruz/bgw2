@@ -117,7 +117,7 @@ export function MaterialsSection() {
               "We believe in creating furniture that transcends trends—pieces that become more beautiful with age,
               carrying stories and memories through generations."
             </p>
-            <footer className="mt-4 text-sm text-white/70">— KATACHI Studio</footer>
+            <footer className="mt-4 text-sm text-white/70">— BGW Doors Studio</footer>
           </blockquote>
         </Reveal>
       </div>

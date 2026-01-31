@@ -11,39 +11,39 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Katachi — Design furniture for spaces that breathe.",
-  description: "Architected in Belgium, built to last—timeless pieces.",
+  title: "BGW Doors — Premium doors for modern spaces.",
+  description: "BGW Doors crafts luxury fiberglass, wood, and iron doors engineered for nationwide projects.",
   generator: "AEON",
   alternates: {
-    canonical: "https://katachi.example/",
+    canonical: "https://bgwdoors.com/",
   },
   openGraph: {
-    siteName: "Katachi",
-    title: "Design furniture for spaces that breathe. | Katachi",
-    description: "Architected in Belgium, built to last—timeless pieces.",
+    siteName: "BGW Doors",
+    title: "Premium doors for modern spaces | BGW Doors",
+    description: "BGW Doors crafts luxury fiberglass, wood, and iron doors engineered for nationwide projects.",
     type: "website",
-    url: "https://katachi.example/",
+    url: "https://bgwdoors.com/",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/opengraph-katachi.jpg-7vz2r3hxZA6woukGOmH115Fg7Piyjs.jpeg",
-        alt: "Katachi design furniture — timeless pieces, architected in Belgium",
+        url: "https://bgw2.vercel.app/bgw-hero.png",
+        alt: "BGW Doors showroom featuring modern fiberglass, wood, and iron doors",
         width: 1200,
         height: 630,
       },
     ],
-    locale: "en_BE",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Design furniture for spaces that breathe. | Katachi",
-    description: "Architected in Belgium, built to last—timeless pieces.",
+    title: "Premium doors for modern spaces | BGW Doors",
+    description: "BGW Doors crafts luxury fiberglass, wood, and iron doors engineered for nationwide projects.",
     images: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/opengraph-katachi.jpg-7vz2r3hxZA6woukGOmH115Fg7Piyjs.jpeg",
-        alt: "Katachi design furniture — timeless pieces, architected in Belgium",
+        url: "https://bgw2.vercel.app/bgw-hero.png",
+        alt: "BGW Doors showroom featuring modern fiberglass, wood, and iron doors",
       },
     ],
-    site: "@katachi",
+    site: "@bgwdoors",
   },
 }
 

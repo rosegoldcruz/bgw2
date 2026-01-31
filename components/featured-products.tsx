@@ -7,9 +7,6 @@ import { ProductCard } from "./product-card"
 import { QuickLookModal } from "./quick-look-modal"
 import { Reveal } from "./reveal"
 import { ElectricBorderFrame } from "@/components/ui/electric-border-frame"
-import dynamic from "next/dynamic"
-
-const PixelSnow = dynamic(() => import("@/components/ui/PixelSnow"), { ssr: false })
 
 const featuredProducts = [
   {
@@ -87,20 +84,6 @@ export function FeaturedProducts() {
 
   return (
     <section className="py-20 lg:py-32 relative overflow-hidden bg-neutral-900" id="featured-products">
-      <PixelSnow 
-        color="#ffffff"
-        flakeSize={0.013}
-        minFlakeSize={1.25}
-        pixelResolution={220}
-        speed={0.7}
-        density={0.65}
-        direction={255}
-        brightness={2.1}
-        depthFade={5}
-        farPlane={50}
-        gamma={0.4545}
-        variant="round"
-      />
       <div className="container-custom relative z-10">
         <Reveal>
           <div className="text-left mb-16">
