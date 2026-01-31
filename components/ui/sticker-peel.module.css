@@ -1,4 +1,10 @@
-:global(:root) {
+.stickerPeelPointer {
+  position: absolute;
+  cursor: grab;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+
   --sticker-rotate: 30deg;
   --sticker-p: 10px;
   --sticker-peelback-hover: 30%;
@@ -115,14 +121,6 @@
 .flapImage {
   transform: rotate(var(--sticker-rotate));
   filter: url(#expandAndFill);
-}
-
-.stickerPeelPointer {
-  position: absolute;
-  cursor: grab;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
 }
 
 .stickerPeelPointer:active {
