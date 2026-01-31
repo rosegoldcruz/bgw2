@@ -101,9 +101,16 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.9, ease: [0.21, 0.47, 0.32, 0.98] }}
                 >
-                  Call Us: (909) 789-1818<br />
+                  Call Us: <a href="tel:+19097891818" className="hover:text-white transition-colors underline">(909) 789-1818</a><br />
                   Open Mon – Fri<br />
-                  753 E Francis St, Ontario, CA
+                  <a 
+                    href="https://www.google.com/maps/place/BGW+Doors/@34.0426308,-117.6423059,17z/data=!3m1!4b1!4m6!3m5!1s0x80c335611518531f:0x4d2d4646993855a9!8m2!3d34.0426264!4d-117.6397256!16s%2Fg%2F11r49qshsy?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors underline"
+                  >
+                    753 E Francis St, Ontario, CA
+                  </a>
                 </motion.p>
               </Reveal>
 
