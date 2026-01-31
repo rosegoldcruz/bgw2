@@ -49,7 +49,11 @@ export function ElectricBorderFrame({
       <div className="electric-card-container">
         <div className="electric-inner">
           <div className="electric-border-outer">
-            <div className="electric-main-card" style={{ filter: `url(#${filterId})` }}>
+            <div
+              className="electric-border-mask"
+              style={{ filter: `url(#${filterId})` }}
+            />
+            <div className="electric-main-card">
               {children}
             </div>
           </div>
