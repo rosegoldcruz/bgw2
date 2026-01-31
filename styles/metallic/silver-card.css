@@ -1,26 +1,61 @@
 .metallic-frame {
   position: relative;
-  border-radius: 20px;
+  border-radius: 22px;
   padding: 2px;
-  background: linear-gradient(
-    135deg,
-    #d9d9d9,
-    #7a7a7a,
-    #ffffff,
-    #6b6b6b
-  );
+  overflow: hidden;
+  isolation: isolate;
 }
 
+/* Animated liquid metal base */
 .metallic-frame::before {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  background: radial-gradient(circle at top left, #ffffff55, transparent 40%);
+  inset: -200%;
+  background:
+    linear-gradient(
+      120deg,
+      #dcdcdc,
+      #9b9b9b,
+      #ffffff,
+      #7f7f7f,
+      #e6e6e6
+    );
+  background-size: 300% 300%;
+  animation: liquidMetal 6s linear infinite;
+  filter: blur(18px);
+  opacity: 0.95;
+}
+
+/* Electric shimmer layer */
+.metallic-frame::after {
+  content: "";
+  position: absolute;
+  inset: -200%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), transparent 40%),
+    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.35), transparent 45%);
+  animation: shimmerMove 4s linear infinite;
+  mix-blend-mode: overlay;
   pointer-events: none;
 }
 
 .metallic-frame > * {
-  border-radius: 18px;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
   overflow: hidden;
+}
+
+/* Animations */
+
+@keyframes liquidMetal {
+  0% { transform: translate(0%, 0%); }
+  50% { transform: translate(50%, 50%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+@keyframes shimmerMove {
+  0% { transform: translate(0%, 0%); }
+  50% { transform: translate(-40%, 40%); }
+  100% { transform: translate(0%, 0%); }
 }
