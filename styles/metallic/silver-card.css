@@ -2,79 +2,49 @@
   position: relative;
   border-radius: 22px;
   padding: 2px;
-  overflow: hidden;
-  isolation: isolate;
-}
 
-/* Animated liquid metal base */
-.metallic-frame::before {
-  content: "";
-  position: absolute;
-  inset: -200%;
-  background:
-    linear-gradient(
-      120deg,
-      #dcdcdc,
-      #9b9b9b,
-      #ffffff,
-      #7f7f7f,
-      #e6e6e6
-    );
-  background-size: 300% 300%;
-  animation: liquidMetal 6s linear infinite;
-  filter: blur(18px);
-  opacity: 0.95;
-}
+  /* actual metal border */
+  background: linear-gradient(
+    135deg,
+    #f5f5f5,
+    #bcbcbc,
+    #ffffff,
+    #8a8a8a,
+    #eaeaea
+  );
 
-/* Electric shimmer layer */
-.metallic-frame::after {
-  content: "";
-  position: absolute;
-  inset: -200%;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.55), transparent 40%),
-    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.35), transparent 45%);
-  animation: shimmerMove 4s linear infinite;
-  mix-blend-mode: overlay;
-  pointer-events: none;
-}
-
-.metallic-frame > * {
-  position: relative;
-  z-index: 1;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-/* Animations */
-
-@keyframes liquidMetal {
-  0% { transform: translate(0%, 0%); }
-  50% { transform: translate(50%, 50%); }
-  100% { transform: translate(0%, 0%); }
-}
-
-@keyframes shimmerMove {
-  0% { transform: translate(0%, 0%); }
-  50% { transform: translate(-40%, 40%); }
-  100% { transform: translate(0%, 0%); }
-}
-
-/* Chrome edge rim */
-.metallic-frame {
   box-shadow:
-    0 0 0 1px rgba(255,255,255,0.35),
-    0 0 12px rgba(255,255,255,0.35),
+    0 0 0 1px rgba(255,255,255,0.5),
+    0 0 18px rgba(255,255,255,0.45),
     inset 0 0 10px rgba(255,255,255,0.25);
 }
 
-/* Slight animated glow pulse */
-@keyframes edgePulse {
-  0%   { box-shadow: 0 0 0 1px rgba(255,255,255,0.25), 0 0 12px rgba(255,255,255,0.35); }
-  50%  { box-shadow: 0 0 0 1px rgba(255,255,255,0.45), 0 0 20px rgba(255,255,255,0.55); }
-  100% { box-shadow: 0 0 0 1px rgba(255,255,255,0.25), 0 0 12px rgba(255,255,255,0.35); }
+/* inner card */
+.metallic-frame > * {
+  border-radius: 20px;
+  overflow: hidden;
+  background: inherit;
 }
 
-.metallic-frame {
-  animation: edgePulse 3.5s ease-in-out infinite;
+/* subtle moving sheen */
+.metallic-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255,255,255,0.35) 35%,
+    transparent 50%
+  );
+
+  animation: sheen 4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes sheen {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
