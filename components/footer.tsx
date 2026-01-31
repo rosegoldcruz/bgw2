@@ -1,3 +1,4 @@
+// components/footer.tsx
 "use client"
 import { motion } from "framer-motion"
 import { Instagram, Twitter, Facebook, ArrowUpRight } from "lucide-react"

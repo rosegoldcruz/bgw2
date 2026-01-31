@@ -1,3 +1,4 @@
+// components/blur-panel.tsx
 import { cn } from "@/lib/utils"
 import type { ReactNode } from "react"
 

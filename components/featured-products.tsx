@@ -1,3 +1,4 @@
+// components/featured-products.tsx
 "use client"
 
 import { useState } from "react"

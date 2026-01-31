@@ -1,3 +1,4 @@
+// components/collection-strip.tsx
 "use client"
 
 import { useRef } from "react"

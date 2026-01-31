@@ -1,3 +1,4 @@
+// components/quick-look-modal.tsx
 "use client"
 
 import { useState } from "react"
