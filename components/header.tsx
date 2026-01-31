@@ -2,7 +2,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+import { StickerPeel } from "@/components/ui/sticker-peel"
 
 export function Header() {
   return (
@@ -14,18 +14,26 @@ export function Header() {
     >
       <motion.a
         href="#"
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.02 }}
         transition={{ duration: 0.2 }}
         aria-label="BGW Doors Home"
+        className="relative block rounded-3xl bg-black/40 px-8 py-6 shadow-[0_10px_40px_rgba(0,0,0,0.45)] backdrop-blur-xl"
       >
-        <Image
-          src="/bgw.png"
-          alt="BGW Doors"
-          width={160}
-          height={40}
-          className="h-10 md:h-12 w-auto drop-shadow-lg"
-          priority
-        />
+        <div className="relative h-32 w-40">
+          <StickerPeel
+            imageSrc="/bgw.png"
+            alt="BGW Doors logo"
+            width={180}
+            rotate={-6}
+            peelDirection={18}
+            peelBackHoverPct={26}
+            peelBackActivePct={38}
+            shadowIntensity={0.75}
+            lightingIntensity={0.18}
+            initialPosition={{ x: -12, y: -4 }}
+            className="left-0 top-0"
+          />
+        </div>
       </motion.a>
     </motion.div>
   )

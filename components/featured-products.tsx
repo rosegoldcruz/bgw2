@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 import { ProductCard } from "./product-card"
 import { QuickLookModal } from "./quick-look-modal"
 import { Reveal } from "./reveal"
-import { ElectricBorderFrame } from "@/components/ui/electric-border-frame"
 
 const featuredProducts = [
   {
@@ -127,9 +126,9 @@ export function FeaturedProducts() {
               }}
             >
               <Reveal delay={index * 0.1}>
-                <ElectricBorderFrame>
+                <div className="rounded-[32px] border border-white/10 bg-white/5 p-1 shadow-[0_10px_60px_rgba(0,0,0,0.4)]">
                   <ProductCard product={product} onQuickLook={handleQuickLook} />
-                </ElectricBorderFrame>
+                </div>
               </Reveal>
             </motion.div>
           ))}
