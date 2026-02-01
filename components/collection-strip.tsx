@@ -46,13 +46,13 @@ export function CollectionStrip() {
             <motion.div
               key={collection.id}
               className="flex-shrink-0 w-80 group cursor-pointer"
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.08 }}
               transition={{ duration: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
             >
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden mb-4">
                 <motion.div
                   className="relative w-full h-full"
-                  whileHover={{ filter: "blur(1px)" }}
+                  whileHover={{ scale: 1.06 }}
                   transition={{ duration: 0.3 }}
                 >
                   <Image
@@ -60,6 +60,8 @@ export function CollectionStrip() {
                     alt={collection.name}
                     fill
                     className="object-cover"
+                    draggable={false}
+                    onDragStart={(e) => e.preventDefault()}
                     loading="lazy"
                     sizes="(max-width: 768px) 80vw, (max-width: 1280px) 40vw, 320px"
                   />
