@@ -29,7 +29,7 @@ type StickerPeelProps = {
 export function StickerPeel({
   imageSrc,
   alt = "BGW Doors sticker logo",
-  rotate = 30,
+  rotate = 0,
   peelBackHoverPct = 30,
   peelBackActivePct = 40,
   peelEasing = "power3.out",
@@ -67,11 +67,11 @@ export function StickerPeel({
       bounds: boundsEl,
       inertia: true,
       onDrag() {
-        const rot = gsap.utils.clamp(-24, 24, this.deltaX * 0.4)
-        gsap.to(target, { rotation: rot, duration: 0.15, ease: "power1.out" })
+        // Keep sticker upright during drag to avoid tilt/clipping
+        gsap.set(target, { rotation: 0 })
       },
       onDragEnd() {
-        gsap.to(target, { rotation: 0, duration: 0.8, ease: "power2.out" })
+        gsap.set(target, { rotation: 0 })
       },
     })[0]
 
@@ -152,7 +152,7 @@ export function StickerPeel({
     () =>
       ({
         "--sticker-rotate": `${rotate}deg`,
-        "--sticker-p": "10px",
+        "--sticker-p": "26px",
         "--sticker-peelback-hover": `${peelBackHoverPct}%`,
         "--sticker-peelback-active": `${peelBackActivePct}%`,
         "--sticker-peel-easing": peelEasing,
