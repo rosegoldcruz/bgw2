@@ -1,0 +1,1204 @@
+{
+  "metadata": {
+    "generated_by": "create_mapping.py",
+    "image_count": 99,
+    "product_count": 61,
+    "image_directory": "../public/bg-finals-4x",
+    "product_database": "../data/product_database_corrected.json"
+  },
+  "images": [
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.58 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (6)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.55 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.57 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.57 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.57 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.58 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.58 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (6)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.02 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.42 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.42 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.42 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (5)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (1)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (2)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (3)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": ""
+    }
+  ],
+  "product_reference": [
+    {
+      "id": "M580E30X30X80RH",
+      "full_name": "Solid Wood Exterior Door M580E",
+      "category": "wood",
+      "product_code": "M580E"
+    },
+    {
+      "id": "M705A30X30X80RH",
+      "full_name": "Solid Wood Exterior Door M705A",
+      "category": "wood",
+      "product_code": "M705A"
+    },
+    {
+      "id": "M57730X30X80RH",
+      "full_name": "Solid Wood Exterior Door M577",
+      "category": "wood",
+      "product_code": "M577"
+    },
+    {
+      "id": "M300IBLK30X30X80RH",
+      "full_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "category": "wood",
+      "product_code": "300I"
+    },
+    {
+      "id": "M280A36X80RH",
+      "full_name": "Solid Wood Entry Door M280",
+      "category": "wood",
+      "product_code": "M280"
+    },
+    {
+      "id": "H12X36X12X80RH",
+      "full_name": "Solid Wood Exterior Door- Huntington",
+      "category": "wood",
+      "product_code": "SOLID"
+    },
+    {
+      "id": "KA36X80RH",
+      "full_name": "Castle Wood Exterior Entry Doors",
+      "category": "wood",
+      "product_code": "WOOD"
+    },
+    {
+      "id": "VAL36X80RH",
+      "full_name": "Solid Wood Entry Door-M002",
+      "category": "wood",
+      "product_code": "M002"
+    },
+    {
+      "id": "M6P",
+      "full_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "category": "wood",
+      "product_code": "SOLID"
+    },
+    {
+      "id": "M80036X80RH",
+      "full_name": "Solid Wood Exterior Door-M800G",
+      "category": "wood",
+      "product_code": "M800G"
+    },
+    {
+      "id": "MPARIS36X80RH",
+      "full_name": "M-Paris Wood Exterior Door",
+      "category": "wood",
+      "product_code": "PARIS"
+    },
+    {
+      "id": "",
+      "full_name": "Solid Wood Entry Doors-M5P",
+      "category": "wood",
+      "product_code": "SOLID"
+    },
+    {
+      "id": "",
+      "full_name": "M4P-The Austin - Wood Double Entry Doors",
+      "category": "wood",
+      "product_code": "THE"
+    },
+    {
+      "id": "",
+      "full_name": "Solid Wood Exterior Door M580E-White",
+      "category": "wood",
+      "product_code": "M580E"
+    },
+    {
+      "id": "",
+      "full_name": "M1012 | Exterior Wood Double Doors",
+      "category": "wood",
+      "product_code": "WOOD"
+    },
+    {
+      "id": "",
+      "full_name": "M1010 | Exterior Wood Double Doors",
+      "category": "wood",
+      "product_code": "WOOD"
+    },
+    {
+      "id": "",
+      "full_name": "M8P - Wood Entry Doors",
+      "category": "wood",
+      "product_code": "WOOD"
+    },
+    {
+      "id": "",
+      "full_name": "Brookside Wood Doors",
+      "category": "wood",
+      "product_code": "WOOD"
+    },
+    {
+      "id": "",
+      "full_name": "M2011 | Exterior Wood Double Doors",
+      "category": "wood",
+      "product_code": "WOOD"
+    },
+    {
+      "id": "FMKA12X36X12X80RH",
+      "full_name": "Fiberglass Exterior Door FD05",
+      "category": "fiberglass",
+      "product_code": "FD05"
+    },
+    {
+      "id": "FM280B36X80RH",
+      "full_name": "FD280B Fiberglass Doors",
+      "category": "fiberglass",
+      "product_code": "FD280B"
+    },
+    {
+      "id": "FM800D30X30X80RH",
+      "full_name": "Fiberglass Entry Door FD800",
+      "category": "fiberglass",
+      "product_code": "FD800"
+    },
+    {
+      "id": "FD04W36X80RH",
+      "full_name": "Fiberglass Exterior Door FD04W",
+      "category": "fiberglass",
+      "product_code": "FD04W"
+    },
+    {
+      "id": "",
+      "full_name": "Fiberglass Door Iron Scroll Work Rain Glass FD800W",
+      "category": "iron",
+      "product_code": "FD800W"
+    },
+    {
+      "id": "",
+      "full_name": "Fiberglass Entry Door-FD280W",
+      "category": "fiberglass",
+      "product_code": "FD280W"
+    },
+    {
+      "id": "",
+      "full_name": "London Fiberglass Double Door",
+      "category": "fiberglass",
+      "product_code": "DOOR"
+    },
+    {
+      "id": "ID0230X30X96RH",
+      "full_name": "Iron Exterior Door #ID02 Iron Door",
+      "category": "iron",
+      "product_code": "ID02"
+    },
+    {
+      "id": "ID0330X30X80RH",
+      "full_name": "Iron Door Exterior # ID03",
+      "category": "iron",
+      "product_code": "ID03"
+    },
+    {
+      "id": "ID0736X80RH",
+      "full_name": "Iron Door Exterior # ID07",
+      "category": "iron",
+      "product_code": "ID07"
+    },
+    {
+      "id": "ID0536X36X96RH",
+      "full_name": "Iron Exterior Door#ID05",
+      "category": "iron",
+      "product_code": "ID05"
+    },
+    {
+      "id": "ID0130X30X80RH",
+      "full_name": "Iron Entry Door#ID01",
+      "category": "iron",
+      "product_code": "ID01"
+    },
+    {
+      "id": "ID0436X36X96RH",
+      "full_name": "Iron Door Exterior # ID04",
+      "category": "iron",
+      "product_code": "ID04"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi906",
+      "category": "wood",
+      "product_code": "MI906"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi905",
+      "category": "wood",
+      "product_code": "MI905"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi902",
+      "category": "wood",
+      "product_code": "MI902"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi901",
+      "category": "wood",
+      "product_code": "MI901"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – 580E",
+      "category": "slab",
+      "product_code": "580E"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M580C",
+      "category": "slab",
+      "product_code": "M580C"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Entry Door – M580A",
+      "category": "slab",
+      "product_code": "M580A"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door- M705A",
+      "category": "slab",
+      "product_code": "M705A"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M680A",
+      "category": "slab",
+      "product_code": "M680A"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Wood Exterior Door M705B – Closeout Sale",
+      "category": "slab",
+      "product_code": "M705B"
+    },
+    {
+      "id": "",
+      "full_name": "M766 Slab Wood Entry Door – Closeout",
+      "category": "slab",
+      "product_code": "M766"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M300 Series",
+      "category": "slab",
+      "product_code": "M300"
+    },
+    {
+      "id": "",
+      "full_name": "M777 Slab Wood Entry Door",
+      "category": "slab",
+      "product_code": "M777"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Exterior Door - Rome",
+      "category": "slab",
+      "product_code": "SLAB"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door- Florence",
+      "category": "slab",
+      "product_code": "SLAB"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Exterior Door – M285E",
+      "category": "slab",
+      "product_code": "M285E"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M280 Series",
+      "category": "slab",
+      "product_code": "M280"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – London",
+      "category": "slab",
+      "product_code": "SLAB"
+    }
+  ]
+}

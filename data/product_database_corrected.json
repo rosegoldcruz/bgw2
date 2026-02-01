@@ -1,0 +1,492 @@
+{
+  "products": [
+    {
+      "id": "M580E30X30X80RH",
+      "full_name": "Solid Wood Exterior Door M580E",
+      "category": "wood",
+      "product_code": "M580E",
+      "clean_name": "solid-wood-exterior-door-m580e",
+      "normalized_name": "wood__solid-wood-exterior-door-m580e"
+    },
+    {
+      "id": "M705A30X30X80RH",
+      "full_name": "Solid Wood Exterior Door M705A",
+      "category": "wood",
+      "product_code": "M705A",
+      "clean_name": "solid-wood-exterior-door-m705a",
+      "normalized_name": "wood__solid-wood-exterior-door-m705a"
+    },
+    {
+      "id": "M57730X30X80RH",
+      "full_name": "Solid Wood Exterior Door M577",
+      "category": "wood",
+      "product_code": "M577",
+      "clean_name": "solid-wood-exterior-door-m577",
+      "normalized_name": "wood__solid-wood-exterior-door-m577"
+    },
+    {
+      "id": "M300IBLK30X30X80RH",
+      "full_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "category": "wood",
+      "product_code": "300I",
+      "clean_name": "solid-wood-exterior-door-300i-time-tunnel",
+      "normalized_name": "wood__solid-wood-exterior-door-300i-time-tunnel"
+    },
+    {
+      "id": "M280A36X80RH",
+      "full_name": "Solid Wood Entry Door M280",
+      "category": "wood",
+      "product_code": "M280",
+      "clean_name": "solid-wood-entry-door-m280",
+      "normalized_name": "wood__solid-wood-entry-door-m280"
+    },
+    {
+      "id": "H12X36X12X80RH",
+      "full_name": "Solid Wood Exterior Door- Huntington",
+      "category": "wood",
+      "product_code": "SOLID",
+      "clean_name": "solid-wood-exterior-door-huntington",
+      "normalized_name": "wood__solid-wood-exterior-door-huntington"
+    },
+    {
+      "id": "KA36X80RH",
+      "full_name": "Castle Wood Exterior Entry Doors",
+      "category": "wood",
+      "product_code": "WOOD",
+      "clean_name": "castle-wood-exterior-entry-doors",
+      "normalized_name": "wood__castle-wood-exterior-entry-doors"
+    },
+    {
+      "id": "VAL36X80RH",
+      "full_name": "Solid Wood Entry Door-M002",
+      "category": "wood",
+      "product_code": "M002",
+      "clean_name": "solid-wood-entry-door-m002",
+      "normalized_name": "wood__solid-wood-entry-door-m002"
+    },
+    {
+      "id": "M6P",
+      "full_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "category": "wood",
+      "product_code": "SOLID",
+      "clean_name": "30x30x80rh-solid-wood-exterior-door-m6p",
+      "normalized_name": "wood__30x30x80rh-solid-wood-exterior-door-m6p"
+    },
+    {
+      "id": "M80036X80RH",
+      "full_name": "Solid Wood Exterior Door-M800G",
+      "category": "wood",
+      "product_code": "M800G",
+      "clean_name": "solid-wood-exterior-door-m800g",
+      "normalized_name": "wood__solid-wood-exterior-door-m800g"
+    },
+    {
+      "id": "MPARIS36X80RH",
+      "full_name": "M-Paris Wood Exterior Door",
+      "category": "wood",
+      "product_code": "PARIS",
+      "clean_name": "m-paris-wood-exterior-door",
+      "normalized_name": "wood__m-paris-wood-exterior-door"
+    },
+    {
+      "id": "",
+      "full_name": "Solid Wood Entry Doors-M5P",
+      "category": "wood",
+      "product_code": "SOLID",
+      "clean_name": "solid-wood-entry-doors-m5p",
+      "normalized_name": "wood__solid-wood-entry-doors-m5p"
+    },
+    {
+      "id": "",
+      "full_name": "M4P-The Austin - Wood Double Entry Doors",
+      "category": "wood",
+      "product_code": "THE",
+      "clean_name": "m4p-the-austin-wood-double-entry-doors",
+      "normalized_name": "wood__m4p-the-austin-wood-double-entry-doors"
+    },
+    {
+      "id": "",
+      "full_name": "Solid Wood Exterior Door M580E-White",
+      "category": "wood",
+      "product_code": "M580E",
+      "clean_name": "solid-wood-exterior-door-m580e-white",
+      "normalized_name": "wood__solid-wood-exterior-door-m580e-white"
+    },
+    {
+      "id": "",
+      "full_name": "M1012 | Exterior Wood Double Doors",
+      "category": "wood",
+      "product_code": "WOOD",
+      "clean_name": "m1012-exterior-wood-double-doors",
+      "normalized_name": "wood__m1012-exterior-wood-double-doors"
+    },
+    {
+      "id": "",
+      "full_name": "M1010 | Exterior Wood Double Doors",
+      "category": "wood",
+      "product_code": "WOOD",
+      "clean_name": "m1010-exterior-wood-double-doors",
+      "normalized_name": "wood__m1010-exterior-wood-double-doors"
+    },
+    {
+      "id": "",
+      "full_name": "M8P - Wood Entry Doors",
+      "category": "wood",
+      "product_code": "WOOD",
+      "clean_name": "m8p-wood-entry-doors",
+      "normalized_name": "wood__m8p-wood-entry-doors"
+    },
+    {
+      "id": "",
+      "full_name": "Brookside Wood Doors",
+      "category": "wood",
+      "product_code": "WOOD",
+      "clean_name": "brookside-wood-doors",
+      "normalized_name": "wood__brookside-wood-doors"
+    },
+    {
+      "id": "",
+      "full_name": "M2011 | Exterior Wood Double Doors",
+      "category": "wood",
+      "product_code": "WOOD",
+      "clean_name": "m2011-exterior-wood-double-doors",
+      "normalized_name": "wood__m2011-exterior-wood-double-doors"
+    },
+    {
+      "id": "FMKA12X36X12X80RH",
+      "full_name": "Fiberglass Exterior Door FD05",
+      "category": "fiberglass",
+      "product_code": "FD05",
+      "clean_name": "fiberglass-exterior-door-fd05",
+      "normalized_name": "fiberglass__fiberglass-exterior-door-fd05"
+    },
+    {
+      "id": "FM280B36X80RH",
+      "full_name": "FD280B Fiberglass Doors",
+      "category": "fiberglass",
+      "product_code": "FD280B",
+      "clean_name": "fd280b-fiberglass-doors",
+      "normalized_name": "fiberglass__fd280b-fiberglass-doors"
+    },
+    {
+      "id": "FM800D30X30X80RH",
+      "full_name": "Fiberglass Entry Door FD800",
+      "category": "fiberglass",
+      "product_code": "FD800",
+      "clean_name": "fiberglass-entry-door-fd800",
+      "normalized_name": "fiberglass__fiberglass-entry-door-fd800"
+    },
+    {
+      "id": "FD04W36X80RH",
+      "full_name": "Fiberglass Exterior Door FD04W",
+      "category": "fiberglass",
+      "product_code": "FD04W",
+      "clean_name": "fiberglass-exterior-door-fd04w",
+      "normalized_name": "fiberglass__fiberglass-exterior-door-fd04w"
+    },
+    {
+      "id": "",
+      "full_name": "Fiberglass Door Iron Scroll Work Rain Glass FD800W",
+      "category": "iron",
+      "product_code": "FD800W",
+      "clean_name": "fiberglass-door-iron-scroll-work-rain-glass-fd800w",
+      "normalized_name": "iron__fiberglass-door-iron-scroll-work-rain-glass-fd800w"
+    },
+    {
+      "id": "",
+      "full_name": "Fiberglass Entry Door-FD280W",
+      "category": "fiberglass",
+      "product_code": "FD280W",
+      "clean_name": "fiberglass-entry-door-fd280w",
+      "normalized_name": "fiberglass__fiberglass-entry-door-fd280w"
+    },
+    {
+      "id": "",
+      "full_name": "London Fiberglass Double Door",
+      "category": "fiberglass",
+      "product_code": "DOOR",
+      "clean_name": "london-fiberglass-double-door",
+      "normalized_name": "fiberglass__london-fiberglass-double-door"
+    },
+    {
+      "id": "ID0230X30X96RH",
+      "full_name": "Iron Exterior Door #ID02 Iron Door",
+      "category": "iron",
+      "product_code": "ID02",
+      "clean_name": "iron-exterior-door-id02-iron-door",
+      "normalized_name": "iron__iron-exterior-door-id02-iron-door"
+    },
+    {
+      "id": "ID0330X30X80RH",
+      "full_name": "Iron Door Exterior # ID03",
+      "category": "iron",
+      "product_code": "ID03",
+      "clean_name": "iron-door-exterior-id03",
+      "normalized_name": "iron__iron-door-exterior-id03"
+    },
+    {
+      "id": "ID0736X80RH",
+      "full_name": "Iron Door Exterior # ID07",
+      "category": "iron",
+      "product_code": "ID07",
+      "clean_name": "iron-door-exterior-id07",
+      "normalized_name": "iron__iron-door-exterior-id07"
+    },
+    {
+      "id": "ID0536X36X96RH",
+      "full_name": "Iron Exterior Door#ID05",
+      "category": "iron",
+      "product_code": "ID05",
+      "clean_name": "iron-exterior-doorid05",
+      "normalized_name": "iron__iron-exterior-doorid05"
+    },
+    {
+      "id": "ID0130X30X80RH",
+      "full_name": "Iron Entry Door#ID01",
+      "category": "iron",
+      "product_code": "ID01",
+      "clean_name": "iron-entry-doorid01",
+      "normalized_name": "iron__iron-entry-doorid01"
+    },
+    {
+      "id": "ID0436X36X96RH",
+      "full_name": "Iron Door Exterior # ID04",
+      "category": "iron",
+      "product_code": "ID04",
+      "clean_name": "iron-door-exterior-id04",
+      "normalized_name": "iron__iron-door-exterior-id04"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi906",
+      "category": "wood",
+      "product_code": "MI906",
+      "clean_name": "interior-wood-door-mi906",
+      "normalized_name": "wood__interior-wood-door-mi906"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi905",
+      "category": "wood",
+      "product_code": "MI905",
+      "clean_name": "interior-wood-door-mi905",
+      "normalized_name": "wood__interior-wood-door-mi905"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi902",
+      "category": "wood",
+      "product_code": "MI902",
+      "clean_name": "interior-wood-door-mi902",
+      "normalized_name": "wood__interior-wood-door-mi902"
+    },
+    {
+      "id": "",
+      "full_name": "Interior Wood Door- mi901",
+      "category": "wood",
+      "product_code": "MI901",
+      "clean_name": "interior-wood-door-mi901",
+      "normalized_name": "wood__interior-wood-door-mi901"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – 580E",
+      "category": "slab",
+      "product_code": "580E",
+      "clean_name": "slab-solid-wood-door-580e",
+      "normalized_name": "slab__slab-solid-wood-door-580e"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M580C",
+      "category": "slab",
+      "product_code": "M580C",
+      "clean_name": "slab-solid-wood-door-m580c",
+      "normalized_name": "slab__slab-solid-wood-door-m580c"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Entry Door – M580A",
+      "category": "slab",
+      "product_code": "M580A",
+      "clean_name": "slab-solid-wood-entry-door-m580a",
+      "normalized_name": "slab__slab-solid-wood-entry-door-m580a"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door- M705A",
+      "category": "slab",
+      "product_code": "M705A",
+      "clean_name": "slab-solid-wood-door-m705a",
+      "normalized_name": "slab__slab-solid-wood-door-m705a"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M680A",
+      "category": "slab",
+      "product_code": "M680A",
+      "clean_name": "slab-solid-wood-door-m680a",
+      "normalized_name": "slab__slab-solid-wood-door-m680a"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Wood Exterior Door M705B – Closeout Sale",
+      "category": "slab",
+      "product_code": "M705B",
+      "clean_name": "slab-wood-exterior-door-m705b-closeout-sale",
+      "normalized_name": "slab__slab-wood-exterior-door-m705b-closeout-sale"
+    },
+    {
+      "id": "",
+      "full_name": "M766 Slab Wood Entry Door – Closeout",
+      "category": "slab",
+      "product_code": "M766",
+      "clean_name": "m766-slab-wood-entry-door-closeout",
+      "normalized_name": "slab__m766-slab-wood-entry-door-closeout"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M300 Series",
+      "category": "slab",
+      "product_code": "M300",
+      "clean_name": "slab-solid-wood-door-m300-series",
+      "normalized_name": "slab__slab-solid-wood-door-m300-series"
+    },
+    {
+      "id": "",
+      "full_name": "M777 Slab Wood Entry Door",
+      "category": "slab",
+      "product_code": "M777",
+      "clean_name": "m777-slab-wood-entry-door",
+      "normalized_name": "slab__m777-slab-wood-entry-door"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Exterior Door - Rome",
+      "category": "slab",
+      "product_code": "SLAB",
+      "clean_name": "slab-solid-wood-exterior-door-rome",
+      "normalized_name": "slab__slab-solid-wood-exterior-door-rome"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door- Florence",
+      "category": "slab",
+      "product_code": "SLAB",
+      "clean_name": "slab-solid-wood-door-florence",
+      "normalized_name": "slab__slab-solid-wood-door-florence"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Exterior Door – M285E",
+      "category": "slab",
+      "product_code": "M285E",
+      "clean_name": "slab-solid-wood-exterior-door-m285e",
+      "normalized_name": "slab__slab-solid-wood-exterior-door-m285e"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M280 Series",
+      "category": "slab",
+      "product_code": "M280",
+      "clean_name": "slab-solid-wood-door-m280-series",
+      "normalized_name": "slab__slab-solid-wood-door-m280-series"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – London",
+      "category": "slab",
+      "product_code": "SLAB",
+      "clean_name": "slab-solid-wood-door-london",
+      "normalized_name": "slab__slab-solid-wood-door-london"
+    },
+    {
+      "id": "M800 12\" x 96\" x 1 3/4\"",
+      "full_name": "M800 Series Mahogany Slab Door",
+      "category": "slab",
+      "product_code": "M800",
+      "clean_name": "m800-series-mahogany-slab-door",
+      "normalized_name": "slab__m800-series-mahogany-slab-door"
+    },
+    {
+      "id": "",
+      "full_name": "Slab Solid Wood Door – M285C",
+      "category": "slab",
+      "product_code": "M285C",
+      "clean_name": "slab-solid-wood-door-m285c",
+      "normalized_name": "slab__slab-solid-wood-door-m285c"
+    },
+    {
+      "id": "",
+      "full_name": "Oak and Mahogany Solid Wood Slab Door - Paris",
+      "category": "slab",
+      "product_code": "OAK",
+      "clean_name": "oak-and-mahogany-solid-wood-slab-door-paris",
+      "normalized_name": "slab__oak-and-mahogany-solid-wood-slab-door-paris"
+    },
+    {
+      "id": "",
+      "full_name": "Solid Slab Wood Door - Litchfield View",
+      "category": "slab",
+      "product_code": "SOLID",
+      "clean_name": "solid-slab-wood-door-litchfield-view",
+      "normalized_name": "slab__solid-slab-wood-door-litchfield-view"
+    },
+    {
+      "id": "",
+      "full_name": "Knotty Alder Wood Slab Door Oracle Exterior Entry – Closeout Sale",
+      "category": "slab",
+      "product_code": "ALDER",
+      "clean_name": "knotty-alder-wood-slab-door-oracle-exterior-entry-closeout-sale",
+      "normalized_name": "slab__knotty-alder-wood-slab-door-oracle-exterior-entry-closeout-sale"
+    },
+    {
+      "id": "",
+      "full_name": "Knotty Alder Wood Door - Maricopa View",
+      "category": "wood",
+      "product_code": "ALDER",
+      "clean_name": "knotty-alder-wood-door-maricopa-view",
+      "normalized_name": "wood__knotty-alder-wood-door-maricopa-view"
+    },
+    {
+      "id": "",
+      "full_name": "Knotty Alder Wood Slab Door Carefree View Exterior Entry – Closeout Sale",
+      "category": "slab",
+      "product_code": "ALDER",
+      "clean_name": "knotty-alder-wood-slab-door-carefree-view-exterior-entry-closeout-sale",
+      "normalized_name": "slab__knotty-alder-wood-slab-door-carefree-view-exterior-entry-closeout-sale"
+    },
+    {
+      "id": "",
+      "full_name": "Knotty Alder Wood Slab Door Carefree n/v Exterior Entry – Closeout Sale",
+      "category": "slab",
+      "product_code": "ALDER",
+      "clean_name": "knotty-alder-wood-slab-door-carefree-nv-exterior-entry-closeout-sale",
+      "normalized_name": "slab__knotty-alder-wood-slab-door-carefree-nv-exterior-entry-closeout-sale"
+    },
+    {
+      "id": "",
+      "full_name": "Knotty Alder Solid Wood Slab Door- Maricopa No View",
+      "category": "slab",
+      "product_code": "ALDER",
+      "clean_name": "knotty-alder-solid-wood-slab-door-maricopa-no-view",
+      "normalized_name": "slab__knotty-alder-solid-wood-slab-door-maricopa-no-view"
+    },
+    {
+      "id": "",
+      "full_name": "Knotty Alder Wood Door Exterior Litchfield No View Slab",
+      "category": "slab",
+      "product_code": "ALDER",
+      "clean_name": "knotty-alder-wood-door-exterior-litchfield-no-view-slab",
+      "normalized_name": "slab__knotty-alder-wood-door-exterior-litchfield-no-view-slab"
+    },
+    {
+      "id": "BE02",
+      "full_name": "AC-US26 - BE02",
+      "category": "wood",
+      "product_code": "AC",
+      "clean_name": "ac-us26-be02",
+      "normalized_name": "wood__ac-us26-be02"
+    }
+  ]
+}
