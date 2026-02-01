@@ -1,20 +1,21 @@
 // components/collection-strip.tsx
 "use client"
 
-import { useRef } from "react"
-import { motion, useScroll, useTransform } from "framer-motion"
+import { useMemo } from "react"
+import { motion } from "framer-motion"
 import Image from "next/image"
 import { doorCollections } from "@/data/door-collections"
 import { Reveal } from "./reveal"
 
 export function CollectionStrip() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"],
-  })
-
-  const x = useTransform(scrollYProgress, [0, 1], [0, -100])
+  const shuffledCollections = useMemo(() => {
+    const copy = [...doorCollections]
+    for (let i = copy.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[copy[i], copy[j]] = [copy[j], copy[i]]
+    }
+    return copy
+  }, [])
 
   const itemWidth = 320 // 320px (w-80) + 32px gap = 352px per item
   const totalWidth = doorCollections.length * (itemWidth + 32) - 32 // subtract last gap
@@ -22,7 +23,7 @@ export function CollectionStrip() {
   const maxDrag = Math.max(0, totalWidth - containerWidth + 48) // add padding
 
   return (
-    <section ref={containerRef} className="py-20 lg:py-32 overflow-hidden">
+    <section className="py-20 lg:py-32 overflow-hidden">
       <div className="mb-12">
         <Reveal>
           <div className="container-custom text-center">
@@ -37,12 +38,11 @@ export function CollectionStrip() {
       <div className="relative">
         <motion.div
           className="flex gap-8 px-6"
-          style={{ x }}
           drag="x"
           dragConstraints={{ left: -maxDrag, right: 0 }}
           dragElastic={0.1}
         >
-          {doorCollections.map((collection) => (
+          {shuffledCollections.map((collection) => (
             <motion.div
               key={collection.id}
               className="flex-shrink-0 w-80 group cursor-pointer"
@@ -64,16 +64,6 @@ export function CollectionStrip() {
                   />
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300" />
                 </motion.div>
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
-                  <motion.p
-                    className="text-sm text-white tracking-tight"
-                    initial={{ opacity: 0.85, y: 6 }}
-                    whileHover={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {collection.name}
-                  </motion.p>
-                </div>
               </div>
             </motion.div>
           ))}
