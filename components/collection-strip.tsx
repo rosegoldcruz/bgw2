@@ -60,7 +60,8 @@ export function CollectionStrip() {
                     alt={collection.name}
                     fill
                     className="object-cover"
-                    sizes="320px"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 80vw, (max-width: 1280px) 40vw, 320px"
                   />
                   <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300" />
                 </motion.div>
