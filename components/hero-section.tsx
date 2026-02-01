@@ -44,10 +44,7 @@ export function HeroSection() {
   }
 
   return (
-    <section
-      ref={containerRef}
-      className="relative w-full overflow-hidden aspect-[4/5] md:aspect-[16/9] lg:aspect-auto lg:min-h-screen"
-    >
+    <section ref={containerRef} className="relative min-h-screen overflow-hidden">
       {/* Background Image - Full Screen */}
       <motion.div
         className="absolute inset-0"
@@ -69,7 +66,7 @@ export function HeroSection() {
 
       {/* Content */}
       <motion.div
-        className="relative z-10 h-full lg:min-h-screen flex items-center"
+        className="relative z-10 h-full min-h-screen flex items-center"
         style={{ y: contentY, opacity: contentOpacity }}
       >
         <div className="container-custom">
