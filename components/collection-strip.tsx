@@ -4,70 +4,8 @@
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
+import { doorCollections } from "@/data/door-collections"
 import { Reveal } from "./reveal"
-
-const collections = [
-  {
-    id: "modern-seating",
-    name: "MODERN SEATING",
-    image: "/modern-armchair-pillows.png",
-    count: "8 pieces",
-  },
-  {
-    id: "modular-design",
-    name: "MODULAR DESIGN",
-    image: "/modular-cushion-bench.png",
-    count: "6 pieces",
-  },
-  {
-    id: "cloud-collection",
-    name: "CLOUD COLLECTION",
-    image: "/cloud-white-sofa.png",
-    count: "4 pieces",
-  },
-  {
-    id: "artistic-pieces",
-    name: "ARTISTIC PIECES",
-    image: "/distressed-artistic-chair.png",
-    count: "5 pieces",
-  },
-  {
-    id: "contemporary",
-    name: "CONTEMPORARY",
-    image: "/green-modular-loveseat.png",
-    count: "7 pieces",
-  },
-  {
-    id: "textural-craft",
-    name: "TEXTURAL CRAFT",
-    image: "/braided-rope-loveseat.png",
-    count: "3 pieces",
-  },
-  {
-    id: "maximalist-art",
-    name: "MAXIMALIST ART",
-    image: "/colorful-patchwork-sofa.png",
-    count: "4 pieces",
-  },
-  {
-    id: "scandinavian-comfort",
-    name: "SCANDINAVIAN COMFORT",
-    image: "/minimalist-boucle-loveseat.png",
-    count: "6 pieces",
-  },
-  {
-    id: "abstract-forms",
-    name: "ABSTRACT FORMS",
-    image: "/abstract-artistic-sofa.png",
-    count: "5 pieces",
-  },
-  {
-    id: "luxury-textures",
-    name: "LUXURY TEXTURES",
-    image: "/textured-cream-loveseat.png",
-    count: "8 pieces",
-  },
-]
 
 export function CollectionStrip() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -79,7 +17,7 @@ export function CollectionStrip() {
   const x = useTransform(scrollYProgress, [0, 1], [0, -100])
 
   const itemWidth = 320 // 320px (w-80) + 32px gap = 352px per item
-  const totalWidth = collections.length * (itemWidth + 32) - 32 // subtract last gap
+  const totalWidth = doorCollections.length * (itemWidth + 32) - 32 // subtract last gap
   const containerWidth = typeof window !== "undefined" ? window.innerWidth : 1200
   const maxDrag = Math.max(0, totalWidth - containerWidth + 48) // add padding
 
@@ -88,9 +26,9 @@ export function CollectionStrip() {
       <div className="mb-12">
         <Reveal>
           <div className="container-custom text-center">
-            <h2 className="text-neutral-900 mb-4 text-6xl font-normal">Collections</h2>
+            <h2 className="text-neutral-900 mb-4 text-6xl font-normal">Next Gallery</h2>
             <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Explore our curated collections, each telling a unique story of craftsmanship and design philosophy.
+              Drag through every finished BGW door render from the final drop. Nothing staged—just raw inventory.
             </p>
           </div>
         </Reveal>
@@ -104,7 +42,7 @@ export function CollectionStrip() {
           dragConstraints={{ left: -maxDrag, right: 0 }}
           dragElastic={0.1}
         >
-          {collections.map((collection, index) => (
+          {doorCollections.map((collection) => (
             <motion.div
               key={collection.id}
               className="flex-shrink-0 w-80 group cursor-pointer"
@@ -124,19 +62,17 @@ export function CollectionStrip() {
                     className="object-cover"
                     sizes="320px"
                   />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-all duration-300" />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-all duration-300" />
                 </motion.div>
-
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.div
-                    className="text-center text-white"
-                    initial={{ opacity: 0.8 }}
-                    whileHover={{ opacity: 1, scale: 1.05 }}
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4">
+                  <motion.p
+                    className="text-sm text-white tracking-tight"
+                    initial={{ opacity: 0.85, y: 6 }}
+                    whileHover={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h3 className="text-3xl font-bold tracking-wider mb-2">{collection.name}</h3>
-                    <p className="text-sm opacity-90">{collection.count}</p>
-                  </motion.div>
+                    {collection.name}
+                  </motion.p>
                 </div>
               </div>
             </motion.div>
