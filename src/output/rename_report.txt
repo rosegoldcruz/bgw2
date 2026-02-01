@@ -1,0 +1,9 @@
+=== BGW Doors Image Renaming Log ===
+Started: Sat Jan 31 20:27:17 MST 2026
+[2026-01-31 20:27:17] \033[0;34mℹ BGW Doors Image Renaming System\033[0m
+[2026-01-31 20:27:17] \033[0;34mℹ =================================\033[0m
+[2026-01-31 20:27:17] \033[0;34mℹ Starting image processing...\033[0m
+[2026-01-31 20:27:17] \033[0;34mℹ Source directory: ../public/bg-finals-4x\033[0m
+[2026-01-31 20:27:17] \033[0;34mℹ Output directory: ../test_output\033[0m
+[2026-01-31 20:27:17] \033[0;34mℹ Mapping file: ../data/test_mapping.json\033[0m
+[2026-01-31 20:27:17] \033[0;34mℹ Loaded 5 image mappings from ../data/test_mapping.json\033[0m

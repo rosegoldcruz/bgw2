@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "test1.png",
+      "product_id": "TEST001",
+      "category": "wood",
+      "product_name": "Test Wood Door",
+      "confidence": "high",
+      "version": 1,
+      "notes": "Test door"
+    },
+    {
+      "filename": "test2.jpg",
+      "product_id": "TEST002",
+      "category": "iron",
+      "product_name": "Test Iron Door",
+      "confidence": "high",
+      "version": 1,
+      "notes": "Test iron door"
+    }
+  ]
+}

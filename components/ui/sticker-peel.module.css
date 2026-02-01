@@ -1,20 +1,21 @@
 .stickerPeelPointer {
-  position: absolute;
+  position: relative;
+  display: inline-block;
   cursor: grab;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
 
   --sticker-rotate: 30deg;
-  --sticker-p: 10px;
-  --sticker-peelback-hover: 30%;
-  --sticker-peelback-active: 40%;
+  --sticker-p: 0px;
+  --sticker-peelback-hover: 24%;
+  --sticker-peelback-active: 34%;
   --sticker-peel-easing: power3.out;
   --sticker-peel-hover-easing: power2.out;
   --sticker-start: calc(-1 * var(--sticker-p));
   --sticker-end: calc(100% + var(--sticker-p));
-  --sticker-shadow-opacity: 0.6;
-  --sticker-lighting-constant: 0.1;
+  --sticker-shadow-opacity: 0.35;
+  --sticker-lighting-constant: 0.08;
   --peel-direction: 0deg;
 }
 
@@ -101,7 +102,7 @@
     var(--sticker-end) var(--sticker-peelback-hover),
     var(--sticker-start) var(--sticker-peelback-hover)
   );
-  top: calc(-100% + 2 * var(--sticker-peelback-hover) - 1px);
+  top: calc(-100% + 2 * var(--sticker-peelback-hover));
 }
 
 .stickerContainer:active .flap {
@@ -111,7 +112,7 @@
     var(--sticker-end) var(--sticker-peelback-active),
     var(--sticker-start) var(--sticker-peelback-active)
   );
-  top: calc(-100% + 2 * var(--sticker-peelback-active) - 1px);
+  top: calc(-100% + 2 * var(--sticker-peelback-active));
 }
 
 .flapLighting {

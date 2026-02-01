@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "generated_by": "create_mapping.py",
+    "image_count": 5,
+    "product_count": 61,
+    "image_directory": "public/bg-finals-4x",
+    "product_database": "data/product_database_corrected.json"
+  },
+  "images": [
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.58 AM_final.png",
+      "product_id": "M580E30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E",
+      "confidence": "high",
+      "version": 1,
+      "notes": "Dark wood door with glass panels"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (1)_final.png",
+      "product_id": "M580E30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E",
+      "confidence": "high",
+      "version": 2,
+      "notes": "Different angle of the same door"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (2)_final.png",
+      "product_id": "ID0230X30X96RH",
+      "category": "iron",
+      "product_name": "Iron Exterior Door #ID02 Iron Door",
+      "confidence": "medium",
+      "version": 1,
+      "notes": "Black iron door with scroll pattern"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (3)_final.png",
+      "product_id": "FMKA12X36X12X80RH",
+      "category": "fiberglass",
+      "product_name": "Fiberglass Exterior Door FD05",
+      "confidence": "high",
+      "version": 1,
+      "notes": "Brown fiberglass door"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (4)_final.png",
+      "product_id": "",
+      "category": "",
+      "product_name": "",
+      "confidence": "",
+      "version": 1,
+      "notes": "Cannot identify this door"
+    }
+  ],
+  "product_reference": [
+    {
+      "id": "M580E30X30X80RH",
+      "full_name": "Solid Wood Exterior Door M580E",
+      "category": "wood",
+      "product_code": "M580E"
+    },
+    {
+      "id": "ID0230X30X96RH",
+      "full_name": "Iron Exterior Door #ID02 Iron Door",
+      "category": "iron",
+      "product_code": "ID02"
+    },
+    {
+      "id": "FMKA12X36X12X80RH",
+      "full_name": "Fiberglass Exterior Door FD05",
+      "category": "fiberglass",
+      "product_code": "FD05"
+    }
+  ]
+}

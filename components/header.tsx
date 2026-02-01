@@ -14,26 +14,23 @@ export function Header() {
     >
       <motion.a
         href="#"
-        whileHover={{ scale: 1.02 }}
+        whileHover={{ scale: 1.04 }}
         transition={{ duration: 0.2 }}
         aria-label="BGW Doors Home"
-        className="relative block"
+        className="inline-block"
       >
-        <div className="relative h-[140px] w-[140px]">
-          <StickerPeel
-            imageSrc="/bgw.png"
-            alt="BGW Doors logo"
-            width={140}
-            rotate={-6}
-            peelDirection={18}
-            peelBackHoverPct={26}
-            peelBackActivePct={38}
-            shadowIntensity={0.75}
-            lightingIntensity={0.18}
-            initialPosition={{ x: 0, y: 0 }}
-            className="left-0 top-0"
-          />
-        </div>
+        <StickerPeel
+          imageSrc="/bgw.png"
+          alt="BGW Doors logo"
+          width={160}
+          rotate={-4}
+          peelDirection={14}
+          peelBackHoverPct={24}
+          peelBackActivePct={34}
+          shadowIntensity={0.65}
+          lightingIntensity={0.16}
+          initialPosition="center"
+        />
       </motion.a>
     </motion.div>
   )

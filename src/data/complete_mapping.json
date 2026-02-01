@@ -1,0 +1,901 @@
+{
+  "metadata": {
+    "generated_by": "generate_complete_mapping.py",
+    "image_count": 99,
+    "product_count": 61,
+    "note": "This is an auto-generated mapping for demonstration. Manual review and correction is required for accurate renaming."
+  },
+  "images": [
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.58 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1012 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Knotty Alder Wood Door - Maricopa View",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (2)_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E-White",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM (4)_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.02.59 AM_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1010 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM (2)_final.png",
+      "product_id": "MPARIS36X80RH",
+      "category": "wood",
+      "product_name": "M-Paris Wood Exterior Door",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.00 AM_final.png",
+      "product_id": "M580E30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (1)_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (2)_final.png",
+      "product_id": "VAL36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door-M002",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M4P-The Austin - Wood Double Entry Doors",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (4)_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (5)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E-White",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM (6)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1012 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.01 AM_final.png",
+      "product_id": "M6P",
+      "category": "wood",
+      "product_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (1)_final.png",
+      "product_id": "KA36X80RH",
+      "category": "wood",
+      "product_name": "Castle Wood Exterior Entry Doors",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (2)_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (3)_final.png",
+      "product_id": "BE02",
+      "category": "wood",
+      "product_name": "AC-US26 - BE02",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (4)_final.png",
+      "product_id": "MPARIS36X80RH",
+      "category": "wood",
+      "product_name": "M-Paris Wood Exterior Door",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM (5)_final.png",
+      "product_id": "M580E30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.02 AM_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (1)_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M4P-The Austin - Wood Double Entry Doors",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1010 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (4)_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM (5)_final.png",
+      "product_id": "KA36X80RH",
+      "category": "wood",
+      "product_name": "Castle Wood Exterior Entry Doors",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 10.03.03 AM_final.png",
+      "product_id": "MPARIS36X80RH",
+      "category": "wood",
+      "product_name": "M-Paris Wood Exterior Door",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.55 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M4P-The Austin - Wood Double Entry Doors",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Brookside Wood Doors",
+      "confidence": "low",
+      "version": 6,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1010 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 7,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Knotty Alder Wood Door - Maricopa View",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.56 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Doors-M5P",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.57 AM (1)_final.png",
+      "product_id": "BE02",
+      "category": "wood",
+      "product_name": "AC-US26 - BE02",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.57 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi905",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.57 AM_final.png",
+      "product_id": "KA36X80RH",
+      "category": "wood",
+      "product_name": "Castle Wood Exterior Entry Doors",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.58 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1010 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 8,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.58 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi906",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M4P-The Austin - Wood Double Entry Doors",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1012 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 9,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi902",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (4)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1010 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 10,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM (5)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi905",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.12.59 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Brookside Wood Doors",
+      "confidence": "low",
+      "version": 11,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (1)_final.png",
+      "product_id": "M6P",
+      "category": "wood",
+      "product_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi905",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (3)_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (4)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Doors-M5P",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM (5)_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.00 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1012 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 12,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (1)_final.png",
+      "product_id": "MPARIS36X80RH",
+      "category": "wood",
+      "product_name": "M-Paris Wood Exterior Door",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (2)_final.png",
+      "product_id": "M6P",
+      "category": "wood",
+      "product_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (3)_final.png",
+      "product_id": "M80036X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door-M800G",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (4)_final.png",
+      "product_id": "M57730X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M577",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (5)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M8P - Wood Entry Doors",
+      "confidence": "low",
+      "version": 13,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM (6)_final.png",
+      "product_id": "M6P",
+      "category": "wood",
+      "product_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.01 AM_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.02 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 14,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.42 AM (1)_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.42 AM (2)_final.png",
+      "product_id": "M57730X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M577",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.42 AM_final.png",
+      "product_id": "M6P",
+      "category": "wood",
+      "product_name": "30X30X80RH - Solid Wood Exterior Door M6P",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM (1)_final.png",
+      "product_id": "MPARIS36X80RH",
+      "category": "wood",
+      "product_name": "M-Paris Wood Exterior Door",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi901",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi906",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.43 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 15,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 16,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (2)_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (3)_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (4)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 17,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM (5)_final.png",
+      "product_id": "MPARIS36X80RH",
+      "category": "wood",
+      "product_name": "M-Paris Wood Exterior Door",
+      "confidence": "low",
+      "version": 6,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.44 AM_final.png",
+      "product_id": "H12X36X12X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door- Huntington",
+      "confidence": "low",
+      "version": 1,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1012 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 18,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (2)_final.png",
+      "product_id": "M80036X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door-M800G",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Brookside Wood Doors",
+      "confidence": "low",
+      "version": 19,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (4)_final.png",
+      "product_id": "H12X36X12X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door- Huntington",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM (5)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 20,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.45 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E-White",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M4P-The Austin - Wood Double Entry Doors",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M580E-White",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1010 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 21,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (4)_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 6,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM (5)_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 6,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.46 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M4P-The Austin - Wood Double Entry Doors",
+      "confidence": "low",
+      "version": 6,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Knotty Alder Wood Door - Maricopa View",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (2)_final.png",
+      "product_id": "M705A30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door M705A",
+      "confidence": "low",
+      "version": 7,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Knotty Alder Wood Door - Maricopa View",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM (4)_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 6,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.13.47 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi901",
+      "confidence": "low",
+      "version": 2,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M1012 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 22,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (2)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Knotty Alder Wood Door - Maricopa View",
+      "confidence": "low",
+      "version": 5,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (3)_final.png",
+      "product_id": "M280A36X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Entry Door M280",
+      "confidence": "low",
+      "version": 7,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM (4)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "M2011 | Exterior Wood Double Doors",
+      "confidence": "low",
+      "version": 23,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.27 AM_final.png",
+      "product_id": "H12X36X12X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door- Huntington",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (1)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi906",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (2)_final.png",
+      "product_id": "M300IBLK30X30X80RH",
+      "category": "wood",
+      "product_name": "Solid Wood Exterior Door 300I - Time Tunnel",
+      "confidence": "low",
+      "version": 7,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (3)_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi906",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM (4)_final.png",
+      "product_id": "BE02",
+      "category": "wood",
+      "product_name": "AC-US26 - BE02",
+      "confidence": "low",
+      "version": 3,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    },
+    {
+      "filename": "WhatsApp Image 2026-01-30 at 9.14.28 AM_final.png",
+      "product_id": "",
+      "category": "wood",
+      "product_name": "Interior Wood Door- mi905",
+      "confidence": "low",
+      "version": 4,
+      "notes": "Auto-generated mapping based on filename patterns. Category: wood"
+    }
+  ]
+}
