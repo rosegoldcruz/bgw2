@@ -7,7 +7,7 @@
   will-change: transform;
 
   --sticker-rotate: 30deg;
-  --sticker-p: 0px;
+  --sticker-p: 12px;
   --sticker-peelback-hover: 24%;
   --sticker-peelback-active: 34%;
   --sticker-peel-easing: power3.out;
