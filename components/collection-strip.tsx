@@ -9,7 +9,7 @@ import { Reveal } from "./reveal"
 import { X } from "lucide-react"
 
 export function CollectionStrip() {
-  const [selectedDoor, setSelectedDoor] = useState<typeof doorCollections[0] | null>(null)
+  const [selectedDoorId, setSelectedDoorId] = useState<string | null>(null)
 
   const shuffledCollections = useMemo(() => {
     const copy = [...doorCollections]
@@ -26,12 +26,17 @@ export function CollectionStrip() {
   const maxDrag = Math.max(0, totalWidth - containerWidth + 48)
 
   const handleDoorClick = useCallback((door: typeof doorCollections[0]) => {
-    setSelectedDoor(door)
+    setSelectedDoorId(door.id)
   }, [])
 
   const handleClose = useCallback(() => {
-    setSelectedDoor(null)
+    setSelectedDoorId(null)
   }, [])
+
+  const selectedDoor = useMemo(
+    () => (selectedDoorId ? shuffledCollections.find((d) => d.id === selectedDoorId) ?? null : null),
+    [selectedDoorId, shuffledCollections],
+  )
 
   return (
     <section className="py-20 lg:py-32 overflow-hidden relative">
