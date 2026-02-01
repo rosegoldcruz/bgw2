@@ -28,11 +28,14 @@ export function ProductCard({ product, onQuickLook }: ProductCardProps) {
         borderRadius: "24px",
         boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 50px",
       }}
+      whileHover={{ scale: 1.03, rotate: -1.8, y: -10, boxShadow: "0 20px 60px rgba(0,0,0,0.45)" }}
+      whileTap={{ scale: 0.99, rotate: 0 }}
+      transition={{ duration: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
       layout
     >
       {/* Badge */}
       {product.badge && (
-        <div className="absolute top-4 left-4 z-20">
+        <div className="absolute bottom-4 right-4 z-20">
           <span
             className={cn(
               "px-3 py-1 text-xs font-medium rounded-full backdrop-blur-sm",
