@@ -34,7 +34,7 @@ export function AboutSection() {
           <Reveal delay={0.2}>
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden">
               <Image
-                src="/bgw-hero.png"
+                src="/Glass Luxury.png"
                 alt="BGW Doors craftsmanship"
                 fill
                 className="object-cover"
