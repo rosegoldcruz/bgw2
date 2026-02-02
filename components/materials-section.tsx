@@ -9,25 +9,28 @@ import { cn } from "@/lib/utils"
 
 const materials = [
   {
-    id: "pistachio",
-    name: "Pistachio", // shortened from "Pistachio Green"
-    description: "Luxurious pistachio green velvet with rich texture and depth",
+    id: "eclipse",
+    name: "Eclipse",
+    headline: "Quiet minimalism. Maximum impact.",
+    description: "Flush slab doors designed for spaces where less becomes everything.",
     image: "/pistachio.png",
     backgroundImage: "/pistachio.png",
     tint: "bg-green-50",
   },
   {
-    id: "lunar",
-    name: "Lunar", // shortened from "Lunar Gray"
-    description: "Sophisticated lunar gray with subtle metallic undertones",
+    id: "drift",
+    name: "Drift",
+    headline: "Warm surfaces. Clean geometry.",
+    description: "Natural tones and softened edges for modern, livable interiors.",
     image: "/lunar.png",
     backgroundImage: "/lunar.png",
     tint: "bg-gray-100",
   },
   {
-    id: "martian",
-    name: "Martian", // shortened from "Martian Red"
-    description: "Bold martian red with warm terracotta influences",
+    id: "forge",
+    name: "Forge",
+    headline: "Dark form. Heavy presence.",
+    description: "Bold slab silhouettes with industrial character and depth.",
     image: "/martian.png",
     backgroundImage: "/martian.png",
     tint: "bg-red-50",
@@ -35,7 +38,7 @@ const materials = [
 ]
 
 export function MaterialsSection() {
-  const [activeMaterial, setActiveMaterial] = useState("pistachio")
+  const [activeMaterial, setActiveMaterial] = useState("eclipse")
 
   const activeMaterialData = materials.find((m) => m.id === activeMaterial) || materials[0]
 
@@ -81,44 +84,37 @@ export function MaterialsSection() {
             />
           </motion.div>
         ))}
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="absolute top-[120px] left-0 right-0 z-10">
         <div className="container-custom text-white">
           <Reveal>
             <div>
+              {/* Master Title */}
+              <p className="text-sm uppercase tracking-[0.3em] text-white/70 mb-4">Minimal by nature. Bold by choice.</p>
+              <h1 className="font-bold mb-2 text-5xl md:text-6xl">Slab Collection</h1>
+              <p className="text-lg text-white/80 mb-12 max-w-xl">Pure form. Sculpted surfaces. Uninterrupted design.</p>
+              
+              {/* Active Material Headline */}
               <AnimatePresence mode="wait">
-                <motion.h2
+                <motion.div
                   key={activeMaterial}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="font-bold mb-6 text-7xl"
                 >
-                  <AnimatedText text={activeMaterialData.name} delay={0.2} />
-                </motion.h2>
+                  <h2 className="font-bold mb-4 text-4xl md:text-7xl">
+                    <AnimatedText text={activeMaterialData.name} delay={0.2} />
+                  </h2>
+                  <p className="text-xl text-white/90 font-medium mb-2">{activeMaterialData.headline}</p>
+                  <p className="text-lg text-white/70 leading-relaxed max-w-2xl">{activeMaterialData.description}</p>
+                </motion.div>
               </AnimatePresence>
-              <p className="text-lg text-white/90 leading-relaxed max-w-2xl">
-                Every piece begins with the finest materials, carefully selected for their beauty, durability, and
-                sustainable origins. Our craftspeople honor traditional techniques while embracing modern precision.
-              </p>
             </div>
           </Reveal>
         </div>
-      </div>
-
-      <div className="absolute bottom-8 left-8 z-10 max-w-md hidden">
-        <Reveal delay={0.3}>
-          <blockquote className="pl-0 py-4">
-            <p className="text-xl text-white leading-relaxed italic lg:text-base font-medium">
-              "We believe in creating furniture that transcends trends—pieces that become more beautiful with age,
-              carrying stories and memories through generations."
-            </p>
-            <footer className="mt-4 text-sm text-white/70">— BGW Doors Studio</footer>
-          </blockquote>
-        </Reveal>
       </div>
 
       <div className="absolute bottom-8 left-0 right-0 z-10">
