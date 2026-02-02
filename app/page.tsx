@@ -1,4 +1,4 @@
-"use client"
+5"use client"
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
 import { FeaturedProducts } from "@/components/featured-products"
