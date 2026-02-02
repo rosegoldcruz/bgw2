@@ -9,7 +9,9 @@ import { Reveal } from "./reveal"
 import { X } from "lucide-react"
 
 export function CollectionStrip() {
-  const [selectedDoorId, setSelectedDoorId] = useState<string | null>(null)
+  const [selectedDoorImage, setSelectedDoorImage] = useState<string | null>(null)
+  const [selectedDoorName, setSelectedDoorName] = useState<string | null>(null)
+  const [isDragging, setIsDragging] = useState(false)
 
   const shuffledCollections = useMemo(() => {
     const copy = [...doorCollections]
@@ -25,18 +27,17 @@ export function CollectionStrip() {
   const containerWidth = typeof window !== "undefined" ? window.innerWidth : 1200
   const maxDrag = Math.max(0, totalWidth - containerWidth + 48)
 
-  const handleDoorClick = useCallback((door: typeof doorCollections[0]) => {
-    setSelectedDoorId(door.id)
-  }, [])
+  const handleDoorClick = useCallback((imageSrc: string, name: string) => {
+    if (!isDragging) {
+      setSelectedDoorImage(imageSrc)
+      setSelectedDoorName(name)
+    }
+  }, [isDragging])
 
   const handleClose = useCallback(() => {
-    setSelectedDoorId(null)
+    setSelectedDoorImage(null)
+    setSelectedDoorName(null)
   }, [])
-
-  const selectedDoor = useMemo(
-    () => (selectedDoorId ? shuffledCollections.find((d) => d.id === selectedDoorId) ?? null : null),
-    [selectedDoorId, shuffledCollections],
-  )
 
   return (
     <section className="py-20 lg:py-32 overflow-hidden relative">
@@ -57,6 +58,8 @@ export function CollectionStrip() {
           drag="x"
           dragConstraints={{ left: -maxDrag, right: 0 }}
           dragElastic={0.1}
+          onDragStart={() => setIsDragging(true)}
+          onDragEnd={() => setTimeout(() => setIsDragging(false), 100)}
         >
           {shuffledCollections.map((collection) => (
             <motion.div
@@ -66,7 +69,18 @@ export function CollectionStrip() {
               whileHover={{ scale: 1.06, zIndex: 10 }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              onClick={() => handleDoorClick(collection)}
+              onPointerDown={(e) => {
+                const target = e.currentTarget
+                const startX = e.clientX
+                const handlePointerUp = (upE: PointerEvent) => {
+                  const distance = Math.abs(upE.clientX - startX)
+                  if (distance < 5 && !isDragging) {
+                    handleDoorClick(collection.image, collection.name)
+                  }
+                  target.removeEventListener('pointerup', handlePointerUp)
+                }
+                target.addEventListener('pointerup', handlePointerUp)
+              }}
             >
               <div
                 className="relative w-full"
@@ -94,7 +108,7 @@ export function CollectionStrip() {
       </div>
 
       <AnimatePresence>
-        {selectedDoor && (
+        {selectedDoorImage && (
           <motion.div
             className="fixed inset-0 z-50 flex items-center justify-center"
             initial={{ opacity: 0 }}
@@ -130,8 +144,8 @@ export function CollectionStrip() {
                 style={{ aspectRatio: "3/4" }}
               >
                 <Image
-                  src={selectedDoor.image || "/placeholder.svg"}
-                  alt={selectedDoor.name}
+                  src={selectedDoorImage || "/placeholder.svg"}
+                  alt={selectedDoorName || "Door"}
                   fill
                   className="object-contain"
                   style={{ transform: "scaleX(-1)" }}
@@ -141,7 +155,7 @@ export function CollectionStrip() {
               </div>
 
               <div className="mt-6 text-center">
-                <h3 className="text-2xl font-semibold text-white mb-2">{selectedDoor.name}</h3>
+                <h3 className="text-2xl font-semibold text-white mb-2">{selectedDoorName}</h3>
                 <p className="text-white/70">Click outside or press X to close</p>
               </div>
             </motion.div>
