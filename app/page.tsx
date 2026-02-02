@@ -234,7 +234,7 @@ const DoorQuizModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
 
               {view !== "prompt" && (
                 <div className="px-6 mt-4">
-                  <div className="flex items-center justify_between text-xs text-slate-500 mb-2">
+                  <div className="flex items-center justify-between text-xs text-slate-500 mb-2">
                     <span>
                       {view === "quiz" ? `Question ${step + 1} of ${quiz.length}` : "Results"}
                     </span>
