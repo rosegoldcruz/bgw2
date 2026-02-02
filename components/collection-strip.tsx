@@ -28,9 +28,6 @@ export function CollectionStrip() {
         <Reveal>
           <div className="container-custom text-center">
             <h2 className="text-neutral-900 mb-4 text-6xl font-normal">Next Gallery</h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-              Drag through every finished BGW door render from the final drop. Nothing staged—just raw inventory.
-            </p>
           </div>
         </Reveal>
       </div>
