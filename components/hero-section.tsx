@@ -1,6 +1,7 @@
 // components/hero-section.tsx
 "use client"
 
+import Link from "next/link"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 import { PackageCheck, Rocket, ShieldCheck } from "lucide-react" // Added PackageCheck, Rocket, and ShieldCheck icon imports
@@ -130,9 +131,11 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 1.1, ease: [0.21, 0.47, 0.32, 0.98] }}
                 >
-                  <Button size="lg" className="bg-white text-neutral-900 hover:bg-white/90 shadow-lg">
-                    Shop Doors
-                  </Button>
+                  <Link href="/shop">
+                    <Button size="lg" className="bg-white text-neutral-900 hover:bg-white/90 shadow-lg">
+                      Shop Doors
+                    </Button>
+                  </Link>
                   <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 shadow-lg">
                     View on Your Home
                   </Button>
