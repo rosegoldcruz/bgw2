@@ -1,9 +1,17 @@
 // components/product-card.tsx
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+
+// Map product names to shop category anchors
+const categoryLinks: Record<string, string> = {
+  "Fiberglass Doors": "/shop#fiberglass",
+  "Wood Doors": "/shop#wood",
+  "Iron Doors": "/shop#iron",
+}
 
 interface ProductCardProps {
   product: {
@@ -21,7 +29,10 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, onQuickLook }: ProductCardProps) {
+  const href = categoryLinks[product.name] || "/shop"
+  
   return (
+    <Link href={href} className="block">
     <motion.div
       className="group relative bg-white overflow-hidden"
       style={{
@@ -100,5 +111,6 @@ export function ProductCard({ product, onQuickLook }: ProductCardProps) {
         </div>
       </div>
     </motion.div>
+    </Link>
   )
 }
