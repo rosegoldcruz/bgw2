@@ -2,7 +2,7 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { PackageCheck, Rocket, ShieldCheck } from "lucide-react" // Added PackageCheck, Rocket, and ShieldCheck icon imports
 import { Reveal } from "./reveal"
 import { BlurPanel } from "./blur-panel"
@@ -10,12 +10,20 @@ import { Button } from "./ui/button"
 
 export function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => setIsMobile(typeof window !== "undefined" && window.innerWidth <= 768)
+    check()
+    window.addEventListener("resize", check)
+    return () => window.removeEventListener("resize", check)
+  }, [])
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
   })
 
-  const imageScale = useTransform(scrollYProgress, [0, 1], [1.05, 0.95]) // Reduced hero image shrink from 15% to 5%
+  const imageScale = useTransform(scrollYProgress, [0, 1], [1.05, 0.95]) // desktop parallax
   const imageY = useTransform(scrollYProgress, [0, 1], [0, -50])
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 100])
   const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
@@ -47,9 +55,9 @@ export function HeroSection() {
       {/* Background Image - Full Screen */}
       <motion.div
         className="absolute inset-0"
-        style={{ scale: imageScale, y: imageY }}
-        initial={{ scale: 1.05 }}
-        animate={{ scale: 1 }}
+        style={{ scale: isMobile ? 1 : imageScale, y: isMobile ? 0 : imageY }}
+        initial={{ scale: isMobile ? 1 : 1.05 }}
+        animate={{ scale: isMobile ? 1 : 1 }}
         transition={{ duration: 1.2, ease: [0.21, 0.47, 0.32, 0.98] }}
       >
         <picture className="absolute inset-0 block">
@@ -57,7 +65,7 @@ export function HeroSection() {
           <img
             src="/bgw-hero.png"
             alt="BGW Doors - Premium door installations and modern interior spaces"
-            className="w-full h-full object-cover"
+            className={`w-full h-full ${isMobile ? "object-contain" : "object-cover"}`}
             loading="eager"
           />
         </picture>
