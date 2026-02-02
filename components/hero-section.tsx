@@ -136,9 +136,11 @@ export function HeroSection() {
                       Shop Doors
                     </Button>
                   </Link>
-                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 shadow-lg">
-                    View on Your Home
-                  </Button>
+                  <Link href="/visualizer">
+                    <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 shadow-lg">
+                      View on Your Home
+                    </Button>
+                  </Link>
                 </motion.div>
               </Reveal>
             </div>
