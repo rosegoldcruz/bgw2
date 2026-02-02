@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils"
 
 // Map product names to shop category anchors
 const categoryLinks: Record<string, string> = {
-  "Fiberglass Doors": "/shop#fiberglass",
-  "Wood Doors": "/shop#wood",
-  "Iron Doors": "/shop#iron",
+  "Fiberglass Doors": "/shop/fiberglass",
+  "Wood Doors": "/shop/wood",
+  "Iron Doors": "/shop/iron",
 }
 
 interface ProductCardProps {
