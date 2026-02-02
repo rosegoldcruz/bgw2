@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { MaterialsSection } from "@/components/materials-section";
 import { ShopHero, CategoryHero, ShopProductGrid } from "@/components/shop";
 
 export default function ShopPage() {
@@ -23,6 +24,9 @@ export default function ShopPage() {
   return (
     <main className="min-h-screen bg-neutral-950">
       <Header />
+      
+      {/* Materials Section - Pistachio/Lunar/Martian */}
+      <MaterialsSection />
       
       {/* Shop Hero */}
       <ShopHero />
