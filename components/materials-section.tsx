@@ -12,25 +12,24 @@ const materials = [
     id: "pistachio",
     name: "Pistachio", // shortened from "Pistachio Green"
     description: "Luxurious pistachio green velvet with rich texture and depth",
-    image: "/material-oak-macro.png",
-    backgroundImage:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/new-source_bloom_max_1x.jpg-t1V6yfeAZKKcEvWEkPn7Pfx7hkHDMf.jpeg",
+    image: "/pistachio.png",
+    backgroundImage: "/pistachio.png",
     tint: "bg-green-50",
   },
   {
     id: "lunar",
     name: "Lunar", // shortened from "Lunar Gray"
     description: "Sophisticated lunar gray with subtle metallic undertones",
-    image: "/material-walnut-macro.png",
-    backgroundImage: "/lunar-gray-interior.png",
+    image: "/lunar.png",
+    backgroundImage: "/lunar.png",
     tint: "bg-gray-100",
   },
   {
     id: "martian",
     name: "Martian", // shortened from "Martian Red"
     description: "Bold martian red with warm terracotta influences",
-    image: "/material-steel-macro.png",
-    backgroundImage: "/martian-red-interior.png",
+    image: "/martian.png",
+    backgroundImage: "/martian.png",
     tint: "bg-red-50",
   },
 ]
