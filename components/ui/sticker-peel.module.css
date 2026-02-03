@@ -141,6 +141,8 @@
 .stickerImage,
 .flapImage {
   width: var(--sticker-width, 200px);
+  height: auto;
+  object-fit: contain;
 }
 
 .stickerMain,

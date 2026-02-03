@@ -7,7 +7,7 @@ import { StickerPeel } from "@/components/ui/sticker-peel"
 export function Header() {
   return (
     <motion.div
-      className="fixed top-6 left-0 right-0 z-50 flex justify-center"
+      className="fixed top-6 left-0 right-0 z-50 flex justify-center pt-[env(safe-area-inset-top,0px)]"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
@@ -17,7 +17,7 @@ export function Header() {
         whileHover={{ scale: 1.04 }}
         transition={{ duration: 0.2 }}
         aria-label="BGW Doors Home"
-        className="inline-block scale-[0.85] sm:scale-100 origin-top"
+        className="inline-block w-[min(240px,70vw)] sm:w-auto"
       >
         <StickerPeel
           imageSrc="/bgw.png"
