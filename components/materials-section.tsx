@@ -7,14 +7,14 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 const riseVariants = {
-  hidden: { y: 120, opacity: 0 },
+  hidden: { y: 160, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 1.6,
       ease: [0.22, 1, 0.36, 1],
-      delay: 0.05,
+      delay: 0.1,
     },
   },
 }
@@ -130,14 +130,24 @@ export function MaterialsSection() {
                 exit="hidden"
                 className="door-wrapper"
               >
-                <Image
-                  src={activeDoorImage}
-                  alt={`${activeCollection} door variant`}
-                  width={800}
-                  height={1200}
-                  className="object-contain h-[85vh] w-auto"
-                  priority
-                />
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{
+                    duration: 4.5,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    delay: 1.7,
+                  }}
+                >
+                  <Image
+                    src={activeDoorImage}
+                    alt={`${activeCollection} door variant`}
+                    width={800}
+                    height={1200}
+                    className="object-contain h-[85vh] w-auto"
+                    priority
+                  />
+                </motion.div>
               </motion.div>
             </AnimatePresence>
           </div>
