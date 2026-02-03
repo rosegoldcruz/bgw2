@@ -159,3 +159,18 @@
   pointer-events: none;
   z-index: 10;
 }
+
+/* Mobile-specific fixes to prevent logo clipping */
+@media (max-width: 640px) {
+  .stickerPeelPointer {
+    --sticker-p: 60px; /* Increase padding significantly for mobile */
+  }
+  
+  .stickerMain {
+    clip-path: none !important; /* Remove clip-path entirely on mobile */
+  }
+  
+  .flap {
+    clip-path: none !important; /* Remove clip-path entirely on mobile */
+  }
+}
