@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { CabinetConfigurator } from "@/components/cabinet-configurator"
+import { KitchenColorSelector } from "@/components/kitchen-color-selector"
 import Image from "next/image"
 
 export default function CabinetsPage() {
@@ -49,9 +49,9 @@ export default function CabinetsPage() {
         </div>
       </section>
 
-      {/* Product Configurator */}
+      {/* Kitchen Color Selector */}
       <section>
-        <CabinetConfigurator />
+        <KitchenColorSelector />
       </section>
 
       <Footer />
