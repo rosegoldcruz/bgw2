@@ -1,8 +1,8 @@
 // components/materials-section.tsx
 "use client"
 
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { useState, useRef } from "react"
+import { motion, AnimatePresence, useScroll, useTransform, useSpring } from "framer-motion"
 import Image from "next/image"
 import { Reveal } from "./reveal"
 import { cn } from "@/lib/utils"
@@ -39,8 +39,24 @@ const materials = [
 
 export function MaterialsSection() {
   const [activeMaterial, setActiveMaterial] = useState("eclipse")
+  const containerRef = useRef<HTMLDivElement>(null)
 
   const activeMaterialData = materials.find((m) => m.id === activeMaterial) || materials[0]
+
+  const doorImages: Record<string, string> = {
+    eclipse: "/bg-finals-4x/94.webp",
+    drift: "/bg-finals-4x/12.webp",
+    forge: "/bg-finals-4x/2.webp",
+  }
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  })
+
+  // Scroll movements: Starts at 0, moves up to -40px, then eases back to 0
+  const y = useTransform(scrollYProgress, [0, 0.5, 1], [0, -40, 0])
+  const springY = useSpring(y, { stiffness: 100, damping: 20 })
 
   const AnimatedText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
     return (
@@ -65,27 +81,25 @@ export function MaterialsSection() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="materials">
-      <div className="absolute inset-0 z-0">
-        {materials.map((material) => (
-          <motion.div
-            key={material.id}
-            className="absolute inset-0"
-            initial={{ opacity: material.id === activeMaterial ? 1 : 0 }}
-            animate={{ opacity: material.id === activeMaterial ? 1 : 0 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-          >
-            <Image
-              src={material.backgroundImage || "/placeholder.svg"}
-              alt={`${material.name} interior scene`}
-              fill
-              className="object-cover"
-              priority
-            />
-          </motion.div>
-        ))}
+    <section 
+      ref={containerRef}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-900" 
+      id="materials"
+    >
+      {/* Persistent Parallax Wrapper */}
+      <motion.div 
+        className="absolute inset-0 z-0"
+        style={{ y: springY }}
+      >
+        <Image
+          src={doorImages[activeMaterial]}
+          alt={`${activeMaterial} door variant`}
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/40" />
-      </div>
+      </motion.div>
 
       <div className="absolute top-[120px] left-0 right-0 z-10">
         <div className="container-custom text-white">
