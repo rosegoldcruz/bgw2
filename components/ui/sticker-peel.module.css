@@ -5,10 +5,11 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+  overflow: visible;
 
   --sticker-rotate: 0deg;
   --sticker-p: 26px;
-  --sticker-peelback-hover: 24%;
+  --sticker-peelback-hover: 33%;
   --sticker-peelback-active: 34%;
   --sticker-peel-easing: power3.out;
   --sticker-peel-hover-easing: power2.out;
@@ -23,6 +24,7 @@
   position: relative;
   transform: rotate(var(--peel-direction));
   transform-origin: center;
+  overflow: visible;
 }
 
 .stickerContainer * {
