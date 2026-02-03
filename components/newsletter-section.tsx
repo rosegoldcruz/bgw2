@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 import { Check, Mail } from "lucide-react"
 import { Reveal } from "./reveal"
 import { BlurPanel } from "./blur-panel"
-import { AnimatedText } from "./animated-text"
 
 export function NewsletterSection() {
   const [email, setEmail] = useState("")
@@ -37,10 +36,7 @@ export function NewsletterSection() {
             <BlurPanel className="p-6 lg:p-12 bg-white/40 backdrop-blur-md grain-texture">
               <div className="text-center mb-5 lg:mb-8">
                 <h2 className="text-2xl lg:text-4xl font-bold text-neutral-900 mb-2 lg:mb-4">
-                  <AnimatedText text="Stay ahead of " delay={0.2} />
-                  <span className="italic font-light">
-                    <AnimatedText text="quiet luxury." delay={0.5} />
-                  </span>
+                  Stay ahead of <span className="italic font-light">quiet luxury.</span>
                 </h2>
                 <p className="text-sm lg:text-lg text-neutral-600">
                   Be the first to discover new collections, design insights, and exclusive access to limited pieces.
