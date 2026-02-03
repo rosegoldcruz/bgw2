@@ -49,6 +49,12 @@ export function MaterialsSection() {
     forge: "/bg-finals-4x/2.webp",
   }
 
+  const backgroundImages: Record<string, string> = {
+    eclipse: "/pistachio.png",
+    drift: "/lunar.png",
+    forge: "/martian.png",
+  }
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
@@ -95,8 +101,8 @@ export function MaterialsSection() {
       {/* Layer 1: Static Environment Background */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/slab-hero-bg.png"
-          alt="Slab collection environment"
+          src={backgroundImages[activeMaterial]}
+          alt={`${activeMaterial} environment background`}
           fill
           className="object-cover"
           priority
