@@ -82,7 +82,7 @@ export function FeaturedProducts() {
   }
 
   return (
-    <section className="py-20 lg:py-32 relative overflow-hidden bg-neutral-900" id="featured-products">
+    <section className="pt-20 pb-6 lg:py-32 relative overflow-hidden bg-neutral-900" id="featured-products">
       <div className="container-custom relative z-10">
         <Reveal>
           <div className="text-left mb-16">

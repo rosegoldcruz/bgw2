@@ -23,7 +23,7 @@ export function CollectionStrip() {
   const maxDrag = Math.max(0, totalWidth - containerWidth + 48)
 
   return (
-    <section className="py-20 lg:py-32 overflow-hidden relative">
+    <section className="pt-6 pb-20 lg:py-32 overflow-hidden relative">
       <div className="mb-12">
         <Reveal>
           <div className="container-custom text-center">

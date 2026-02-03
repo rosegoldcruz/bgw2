@@ -17,7 +17,7 @@ export function Header() {
         whileHover={{ scale: 1.04 }}
         transition={{ duration: 0.2 }}
         aria-label="BGW Doors Home"
-        className="inline-block"
+        className="inline-block scale-[0.85] sm:scale-100 origin-top"
       >
         <StickerPeel
           imageSrc="/bgw.png"

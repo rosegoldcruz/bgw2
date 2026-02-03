@@ -34,15 +34,15 @@ export function NewsletterSection() {
       <div className="container-custom">
         <Reveal>
           <div className="max-w-2xl mx-auto">
-            <BlurPanel className="p-8 lg:p-12 bg-white/40 backdrop-blur-md grain-texture">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">
+            <BlurPanel className="p-6 lg:p-12 bg-white/40 backdrop-blur-md grain-texture">
+              <div className="text-center mb-5 lg:mb-8">
+                <h2 className="text-2xl lg:text-4xl font-bold text-neutral-900 mb-2 lg:mb-4">
                   <AnimatedText text="Stay ahead of " delay={0.2} />
                   <span className="italic font-light">
                     <AnimatedText text="quiet luxury." delay={0.5} />
                   </span>
                 </h2>
-                <p className="text-lg text-neutral-600">
+                <p className="text-sm lg:text-lg text-neutral-600">
                   Be the first to discover new collections, design insights, and exclusive access to limited pieces.
                 </p>
               </div>
@@ -61,7 +61,7 @@ export function NewsletterSection() {
                         setIsValid(true)
                       }}
                       placeholder="Enter your email address"
-                      className={`w-full pl-12 pr-4 py-4 bg-white/60 backdrop-blur-sm border rounded-full text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all duration-200 ${
+                      className={`w-full pl-12 pr-4 py-3 lg:py-4 bg-white/60 backdrop-blur-sm border rounded-full text-neutral-900 placeholder-neutral-500 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent transition-all duration-200 ${
                         !isValid ? "border-red-300 focus:ring-red-500" : "border-neutral-200"
                       }`}
                     />
@@ -80,7 +80,8 @@ export function NewsletterSection() {
 
                   <motion.button
                     type="submit"
-                    className="w-full bg-neutral-900 text-white py-4 rounded-full font-medium hover:bg-neutral-800 transition-all duration-200"
+                    type="submit"
+                    className="w-full bg-neutral-900 text-white py-3 lg:py-4 rounded-full font-medium hover:bg-neutral-800 transition-all duration-200"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

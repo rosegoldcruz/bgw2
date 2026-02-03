@@ -1,133 +1,118 @@
 // components/footer.tsx
 "use client"
-import { motion } from "framer-motion"
-import { Instagram, Twitter, Facebook, ArrowUpRight } from "lucide-react"
+import { Instagram, Facebook, Youtube } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
-  const footerLinks = {
-    Shop: [
-      { name: "New Arrivals", href: "#" },
-      { name: "Chairs", href: "#" },
-      { name: "Tables", href: "#" },
-      { name: "Storage", href: "#" },
-      { name: "Lighting", href: "#" },
-    ],
-    Company: [
-      { name: "About", href: "#" },
-      { name: "Craftsmanship", href: "#" },
-      { name: "Sustainability", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "Press", href: "#" },
-    ],
-    Support: [
-      { name: "Contact", href: "#" },
-      { name: "Size Guide", href: "#" },
-      { name: "Care Instructions", href: "#" },
-      { name: "Shipping", href: "#" },
-      { name: "Returns", href: "#" },
-    ],
-  }
-
-  const socialLinks = [
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
-    { name: "Facebook", icon: Facebook, href: "#" },
-  ]
-
   return (
-    <footer className="bg-white/[0.02] border-t border-white/[0.02]">
+    <footer className="bg-neutral-900 border-t border-white/10 text-gray-300">
       <div className="container-custom py-16 lg:py-20">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-12">
-          {/* Brand Section */}
-          <div className="lg:col-span-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">BGW Doors</h3>
-              <p className="text-neutral-600 mb-6 leading-relaxed">
-                Premium fiberglass, wood, and iron doors engineered for nationwide delivery. Built for security,
-                performance, and elevated curb appeal.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+          {/* Column 1 - Brand */}
+          <div className="lg:col-span-1 space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white">BGW Doors</h3>
+              <p className="text-sm leading-relaxed text-gray-400">
+                Premium fiberglass, wood, iron doors, cabinets, windows, and hardware engineered for nationwide delivery. Built for security, performance, and elevated curb appeal.
               </p>
-              <div className="flex space-x-4">
-                {socialLinks.map((social) => (
-                  <motion.a
-                    key={social.name}
-                    href={social.href}
-                    className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100 transition-all duration-200"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <social.icon size={18} />
-                    <span className="sr-only">{social.name}</span>
-                  </motion.a>
-                ))}
-              </div>
-            </motion.div>
+            </div>
+            
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="TikTok">
+                {/* Custom TikTok Icon since it might be missing in older Lucide versions */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+                <Youtube size={20} />
+              </a>
+            </div>
+
+            <a 
+              href="/visualizer" 
+              className="inline-block px-6 py-3 bg-white text-neutral-900 font-medium rounded-full hover:bg-gray-100 transition-colors text-sm"
+            >
+              Visualize on Your Home
+            </a>
           </div>
 
-          {/* Links Sections */}
-          <div className="lg:col-span-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
-              {Object.entries(footerLinks).map(([category, links], index) => (
-                <motion.div
-                  key={category}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <h4 className="font-semibold text-neutral-900 mb-4">{category}</h4>
-                  <ul className="space-y-3">
-                    {links.map((link) => (
-                      <li key={link.name}>
-                        <a
-                          href={link.href}
-                          className="text-neutral-600 hover:text-neutral-900 transition-colors duration-200 group flex items-center"
-                        >
-                          {link.name}
-                          <ArrowUpRight
-                            size={14}
-                            className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-                          />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </motion.div>
-              ))}
-            </div>
+          {/* Column 2 - Products */}
+          <div>
+            <h4 className="font-semibold text-white mb-6">Products</h4>
+            <ul className="space-y-4 text-sm">
+              <li><a href="/shop?category=iron" className="hover:text-white transition-colors">Iron Doors</a></li>
+              <li><a href="/shop?category=fiberglass" className="hover:text-white transition-colors">Fiberglass Doors</a></li>
+              <li><a href="/shop?category=wood" className="hover:text-white transition-colors">Wood Doors</a></li>
+              <li><a href="/shop?category=slab" className="hover:text-white transition-colors">Slab Doors</a></li>
+              <li><a href="/cabinets" className="hover:text-white transition-colors">Cabinets</a></li>
+              <li><a href="/windows" className="hover:text-white transition-colors">Windows</a></li>
+              <li><a href="/hardware" className="hover:text-white transition-colors">Door Hardware</a></li>
+            </ul>
+          </div>
+
+          {/* Column 3 - Tools */}
+          <div>
+            <h4 className="font-semibold text-white mb-6">Tools</h4>
+            <ul className="space-y-4 text-sm">
+              <li><a href="/visualizer" className="hover:text-white transition-colors">Door Visualizer</a></li>
+              <li><a href="/visualizer/cabinets" className="hover:text-white transition-colors">Cabinet Visualizer</a></li>
+            </ul>
+          </div>
+
+          {/* Column 4 - Company */}
+          <div>
+            <h4 className="font-semibold text-white mb-6">Company</h4>
+            <ul className="space-y-4 text-sm">
+              <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
+              <li><a href="/craftsmanship" className="hover:text-white transition-colors">Craftsmanship</a></li>
+              <li><a href="/sustainability" className="hover:text-white transition-colors">Sustainability</a></li>
+              <li><a href="/careers" className="hover:text-white transition-colors">Careers</a></li>
+              <li><a href="/press" className="hover:text-white transition-colors">Press</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Column 5 - Support */}
+          <div>
+            <h4 className="font-semibold text-white mb-6">Support</h4>
+            <ul className="space-y-4 text-sm">
+              <li><a href="/shipping" className="hover:text-white transition-colors">Shipping & Delivery</a></li>
+              <li><a href="/warranty" className="hover:text-white transition-colors">Warranty</a></li>
+              <li><a href="/installation" className="hover:text-white transition-colors">Installation Guide</a></li>
+              <li><a href="/care" className="hover:text-white transition-colors">Care & Maintenance</a></li>
+              <li><a href="/faqs" className="hover:text-white transition-colors">FAQs</a></li>
+              <li><a href="/returns" className="hover:text-white transition-colors">Returns</a></li>
+            </ul>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <motion.div
-          className="pt-8 pb-4 border-t border-neutral-200 flex justify-center items-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-neutral-500 text-center">
-            <p>&copy; {currentYear} BGW Doors. All rights reserved.</p>
-            <div className="flex space-x-6">
-              <a href="#" className="hover:text-neutral-700 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-neutral-700 transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-neutral-700 transition-colors">
-                Cookies
-              </a>
-            </div>
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+          <p>&copy; {currentYear} BGW Doors. All rights reserved.</p>
+          <div className="flex space-x-6">
+            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/cookies" className="hover:text-white transition-colors">Cookies</a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </footer>
   )
