@@ -86,22 +86,48 @@ export function MaterialsSection() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-neutral-900" 
       id="materials"
     >
-      {/* Persistent Parallax Wrapper */}
-      <motion.div 
-        className="absolute inset-0 z-0"
-        style={{ y: springY }}
-      >
+      {/* 
+        CRITICAL: The environment background image must NEVER be replaced by door images.
+        The door images must ALWAYS be rendered as foreground elements layered on top of this background.
+        Do not change this architecture.
+      */}
+      
+      {/* Layer 1: Static Environment Background */}
+      <div className="absolute inset-0 z-0">
         <Image
-          src={doorImages[activeMaterial]}
-          alt={`${activeMaterial} door variant`}
+          src="/slab-hero-bg.png"
+          alt="Slab collection environment"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      {/* Layer 2: Floating Door (Parallax Foreground) */}
+      <motion.div 
+        className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"
+        style={{ y: springY }}
+      >
+        <div className="relative w-full h-full max-w-[1400px] mx-auto">
+          {/*
+             Door image is positioned to align with the rug in the background image.
+             Adjust 'top' or 'transform' if the background image perspective changes.
+          */}
+          <div className="absolute inset-0 flex items-center justify-center">
+             <Image
+              src={doorImages[activeMaterial]}
+              alt={`${activeMaterial} door variant`}
+              width={800} 
+              height={1200}
+              className="object-contain h-[85vh] w-auto"
+              priority
+            />
+          </div>
+        </div>
       </motion.div>
 
-      <div className="absolute top-[120px] left-0 right-0 z-10">
+      <div className="absolute top-[120px] left-0 right-0 z-20 pointer-events-none">
         <div className="container-custom text-white">
           <Reveal>
             <div>
@@ -131,7 +157,7 @@ export function MaterialsSection() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-0 right-0 z-10">
+      <div className="absolute bottom-8 left-0 right-0 z-20">
         <div className="container-custom">
           <Reveal delay={0.1}>
             <div className="flex flex-wrap justify-center gap-3">
