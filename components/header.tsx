@@ -11,18 +11,20 @@ export function Header() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
+      style={{ overflow: 'visible' }}
     >
       <motion.a
         href="#"
         whileHover={{ scale: 1.04 }}
         transition={{ duration: 0.2 }}
         aria-label="BGW Doors Home"
-        className="inline-block w-[min(240px,70vw)] sm:w-auto overflow-visible"
+        className="inline-block w-[min(280px,80vw)] sm:w-auto overflow-visible"
+        style={{ overflow: 'visible' }}
       >
         <StickerPeel
           imageSrc="/bgw.png"
           alt="BGW Doors logo"
-          width={160}
+          width={200}
           rotate={-4}
           peelDirection={14}
           peelBackHoverPct={24}
