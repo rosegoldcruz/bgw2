@@ -39,7 +39,7 @@ export async function POST(request) {
         "Prefer": "wait"
       },
       body: JSON.stringify({
-        version: "fofr/nano-banana:latest",
+        version: "google/nano-banana",
         input: {
           prompt: "A photorealistic depiction of the user's uploaded home photo, with the existing front door and its frame replaced by the selected reference door image. The new door must be perfectly integrated into the existing opening, matching scale, perspective, and alignment. Preserve the original wall material, siding, trim, floor, steps, and surrounding environment exactly as they appear. Lighting, shadows, and reflections must match the original photo. The result should look like a real professional architectural photograph of the door already installed. Ultra-detailed, sharp focus, natural colors, seamless integration, no visible editing artifacts.",
           negative_prompt: "people, hands, tools, construction, distortion, warped geometry, incorrect perspective, mismatched lighting, blur, low resolution, artifacts, watermark, logo, text, extra objects",
