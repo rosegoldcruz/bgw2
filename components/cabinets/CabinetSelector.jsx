@@ -9,7 +9,7 @@ export function CabinetSelector({
 }) {
   return (
     <aside
-      className="rounded-sm border border-white/10 bg-neutral-950/60 backdrop-blur
+      className="rounded-sm border border-white/10 bg-neutral-950
                  shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_30px_80px_rgba(0,0,0,0.55)]"
     >
       <div className="px-5 py-4 border-b border-white/10">
@@ -61,4 +61,3 @@ export function CabinetSelector({
     </aside>
   );
 }
-

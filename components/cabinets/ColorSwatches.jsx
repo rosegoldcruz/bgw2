@@ -4,12 +4,11 @@ export function ColorSwatches({
   colors,
   selectedColorSlug,
   onSelectColor,
-  size = 44,
 }) {
   const entries = Object.entries(colors);
 
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-3">
       {entries.map(([colorSlug, color]) => {
         const isSelected = selectedColorSlug === colorSlug;
         const borderClass = isSelected
@@ -23,21 +22,19 @@ export function ColorSwatches({
             onClick={() => onSelectColor(colorSlug)}
             aria-pressed={isSelected}
             title={color.display_name}
-            className={`relative rounded-full overflow-hidden border transition-all ${borderClass}`}
-            style={{ width: size, height: size }}
+            className={`relative border transition-all ${borderClass} bg-black/40`}
+            style={{ width: 120, height: 80 }}
           >
             <Image
-              src={color.zoom_image}
-              alt={color.display_name}
+              src={color.hero_image}
+              alt={`${color.display_name} kitchen preview`}
               fill
-              sizes={`${size}px`}
-              className="object-cover"
+              sizes="120px"
+              className="object-contain object-center w-full h-full max-w-full max-h-full"
             />
-            <span className="absolute inset-0 bg-black/0 hover:bg-black/10 transition-colors" />
           </button>
         );
       })}
     </div>
   );
 }
-
