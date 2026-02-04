@@ -1,0 +1,202 @@
+{
+  "fusion-shaker": {
+    "display_name": "Fusion Shaker",
+    "colors": {
+      "espresso-walnut": {
+        "display_name": "Espresso Walnut",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/espresso-walnut-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/espresso-walnut-2023.png"
+      },
+      "flour": {
+        "display_name": "Flour",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/flour-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/flour-2023.png"
+      },
+      "graphite": {
+        "display_name": "Graphite",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/graphite-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/graphite-2023.png"
+      },
+      "latte-walnut": {
+        "display_name": "Latte Walnut",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/latte-walnut-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/latte-walnut-2023.png"
+      },
+      "mist": {
+        "display_name": "Mist",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/mist-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/mist-2023.png"
+      },
+      "slate": {
+        "display_name": "Slate",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/slate-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/slate-2023.png"
+      },
+      "storm": {
+        "display_name": "Storm",
+        "hero_image": "/cabinets-kitchens/Fusion Shaker/storm-fusion-shaker.png",
+        "zoom_image": "/cabinets-kitchens/Colors/storm-2023.png"
+      }
+    }
+  },
+  "fusion-slide": {
+    "display_name": "Fusion Slide",
+    "colors": {
+      "espresso-walnut": {
+        "display_name": "Espresso Walnut",
+        "hero_image": "/cabinets-kitchens/Fusion Slide/espresso-walnut-fusion-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/espresso-walnut-2023.png"
+      },
+      "flour": {
+        "display_name": "Flour",
+        "hero_image": "/cabinets-kitchens/Fusion Slide/flour-fusion-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/flour-2023.png"
+      },
+      "graphite": {
+        "display_name": "Graphite",
+        "hero_image": "/cabinets-kitchens/Fusion Slide/graphite-fusion-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/graphite-2023.png"
+      },
+      "storm": {
+        "display_name": "Storm",
+        "hero_image": "/cabinets-kitchens/Fusion Slide/storm-fusion-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/storm-2023.png"
+      }
+    }
+  },
+  "shaker-classic": {
+    "display_name": "Shaker Classic",
+    "colors": {
+      "espresso-walnut": {
+        "display_name": "Espresso Walnut",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/espresso-walnut.png",
+        "zoom_image": "/cabinets-kitchens/Colors/espresso-walnut-2023.png"
+      },
+      "flour": {
+        "display_name": "Flour",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/flour-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/flour-2023.png"
+      },
+      "graphite": {
+        "display_name": "Graphite",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/graphite-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/graphite-2023.png"
+      },
+      "latte-walnut": {
+        "display_name": "Latte Walnut",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/latte-walnut-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/latte-walnut-2023.png"
+      },
+      "mist": {
+        "display_name": "Mist",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/mist-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/mist-2023.png"
+      },
+      "nimbus-oak": {
+        "display_name": "Nimbus Oak",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/nimbus-oak-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/nimbus-oak-2023.png"
+      },
+      "sable-oak": {
+        "display_name": "Sable Oak",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/sable-oak-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/sable-oak-2023.png"
+      },
+      "slate": {
+        "display_name": "Slate",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/slate-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/slate-2023.png"
+      },
+      "storm": {
+        "display_name": "Storm",
+        "hero_image": "/cabinets-kitchens/Shaker Classic/storm-shaker-classic.png",
+        "zoom_image": "/cabinets-kitchens/Colors/storm-2023.png"
+      }
+    }
+  },
+  "shaker-slide": {
+    "display_name": "Shaker Slide",
+    "colors": {
+      "espresso-walnut": {
+        "display_name": "Espresso Walnut",
+        "hero_image": "/cabinets-kitchens/Shaker Slide/espresso-walnut-shaker-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/espresso-walnut-2023.png"
+      },
+      "flour": {
+        "display_name": "Flour",
+        "hero_image": "/cabinets-kitchens/Shaker Slide/flour-shaker-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/flour-2023.png"
+      },
+      "graphite": {
+        "display_name": "Graphite",
+        "hero_image": "/cabinets-kitchens/Shaker Slide/graphite-shaker-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/graphite-2023.png"
+      },
+      "storm": {
+        "display_name": "Storm",
+        "hero_image": "/cabinets-kitchens/Shaker Slide/storm-shaker-slide.png",
+        "zoom_image": "/cabinets-kitchens/Colors/storm-2023.png"
+      }
+    }
+  },
+  "slab": {
+    "display_name": "Slab",
+    "colors": {
+      "espresso-walnut": {
+        "display_name": "Espresso Walnut",
+        "hero_image": "/cabinets-kitchens/Slab/espresso-walnut-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/espresso-walnut-2023.png"
+      },
+      "flour": {
+        "display_name": "Flour",
+        "hero_image": "/cabinets-kitchens/Slab/flour-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/flour-2023.png"
+      },
+      "graphite": {
+        "display_name": "Graphite",
+        "hero_image": "/cabinets-kitchens/Slab/graphite-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/graphite-2023.png"
+      },
+      "latte-walnut": {
+        "display_name": "Latte Walnut",
+        "hero_image": "/cabinets-kitchens/Slab/latte-walnut-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/latte-walnut-2023.png"
+      },
+      "mist": {
+        "display_name": "Mist",
+        "hero_image": "/cabinets-kitchens/Slab/mist-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/mist-2023.png"
+      },
+      "platnum-teak": {
+        "display_name": "Platinum Teak White",
+        "hero_image": "/cabinets-kitchens/Slab/platnum-teak-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/platinum-teak-white-2023.png"
+      },
+      "slate": {
+        "display_name": "Slate",
+        "hero_image": "/cabinets-kitchens/Slab/slate-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/slate-2023.png"
+      },
+      "snow-gloss": {
+        "display_name": "Snow Gloss White",
+        "hero_image": "/cabinets-kitchens/Slab/snow-gloss-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/snow-gloss-white-2023.png"
+      },
+      "storm": {
+        "display_name": "Storm",
+        "hero_image": "/cabinets-kitchens/Slab/storm-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/storm-2023.png"
+      },
+      "urban-teak": {
+        "display_name": "Urban Teak",
+        "hero_image": "/cabinets-kitchens/Slab/urban-teak-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/urban-teak-2023.jpg"
+      },
+      "wheat-oak": {
+        "display_name": "Wheat Oak",
+        "hero_image": "/cabinets-kitchens/Slab/wheat-oak-slab.png",
+        "zoom_image": "/cabinets-kitchens/Colors/wheat-oak.jpg"
+      }
+    }
+  }
+}
