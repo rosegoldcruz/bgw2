@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Loader2, Sparkles, AlertCircle } from "lucide-react";
@@ -21,6 +21,9 @@ function VisualizerContent() {
   const [generatedImage, setGeneratedImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [jobId, setJobId] = useState(null);
+  const [jobStatus, setJobStatus] = useState(null);
+  const pollRef = useRef(null);
 
   // Preselect door if slug is provided in URL
   useEffect(() => {
@@ -37,8 +40,73 @@ function VisualizerContent() {
     }
   }, [doorSlug]);
 
+  const clearPolling = () => {
+    if (pollRef.current) {
+      clearInterval(pollRef.current);
+      pollRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    return () => clearPolling();
+  }, []);
+
+  const safeFetchStatus = async (activeJobId) => {
+    try {
+      const response = await fetch(`/api/visualizer/status?jobId=${activeJobId}`, {
+        cache: "no-store",
+      });
+
+      let data = null;
+      try {
+        data = await response.json();
+      } catch {
+        data = null;
+      }
+
+      if (!response.ok || !data?.status) {
+        return { status: "processing" };
+      }
+
+      return data;
+    } catch {
+      return { status: "processing" };
+    }
+  };
+
+  const startPolling = (activeJobId) => {
+    clearPolling();
+
+    const poll = async () => {
+      const data = await safeFetchStatus(activeJobId);
+      const status = data?.status || "processing";
+
+      setJobStatus(status);
+
+      if (status === "completed" && data?.imageUrl) {
+        setGeneratedImage(data.imageUrl);
+        setIsLoading(false);
+        clearPolling();
+        return;
+      }
+
+      if (status === "failed") {
+        setIsLoading(false);
+        setError("Generation failed. Please try again.");
+        clearPolling();
+      }
+    };
+
+    poll();
+    pollRef.current = setInterval(poll, 2000);
+  };
+
   const handleGenerate = async () => {
     setError(null);
+    setGeneratedImage(null);
+    setJobId(null);
+    setJobStatus(null);
+    clearPolling();
     
     if (!uploadedImage) {
       setError("Please upload a photo of your home first.");
@@ -51,79 +119,52 @@ function VisualizerContent() {
     }
 
     setIsLoading(true);
+    setJobStatus("queued");
 
+    // Construct absolute URL for door image
+    const origin = typeof window !== "undefined" ? window.location.origin : "";
+    const doorImageUrl = `${origin}${selectedDoor.image}`;
+
+    let data = null;
     try {
-      // Construct absolute URL for door image
-      const origin = typeof window !== "undefined" ? window.location.origin : "";
-      const doorImageUrl = `${origin}${selectedDoor.image}`;
-
-      const response = await fetch("/api/visualize", {
+      const response = await fetch("/api/visualizer/generate", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           homeImageUrl: uploadedImage,
-          doorImageUrl: doorImageUrl
-        })
+          doorImageUrl,
+        }),
       });
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Failed to generate visualization");
-      }
-
-      if (data.imageUrl) {
-        setGeneratedImage(data.imageUrl);
-      } else if (data.predictionId) {
-        // Poll for result if prediction is processing
-        await pollForResult(data.predictionId);
-      }
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const pollForResult = async (predictionId) => {
-    const maxAttempts = 60;
-    let attempts = 0;
-
-    while (attempts < maxAttempts) {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
       try {
-        const response = await fetch(`https://api.replicate.com/v1/predictions/${predictionId}`, {
-          headers: {
-            "Authorization": `Bearer ${process.env.NEXT_PUBLIC_REPLICATE_API_TOKEN}`
-          }
-        });
-
-        const prediction = await response.json();
-
-        if (prediction.status === "succeeded") {
-          setGeneratedImage(
-            Array.isArray(prediction.output) ? prediction.output[0] : prediction.output
-          );
-          return;
-        } else if (prediction.status === "failed") {
-          throw new Error("Generation failed. Please try again.");
-        }
-      } catch (err) {
-        throw new Error("Error checking generation status.");
+        data = await response.json();
+      } catch {
+        data = null;
       }
-
-      attempts++;
+    } catch {
+      data = null;
     }
 
-    throw new Error("Generation timed out. Please try again.");
+    if (!data?.jobId) {
+      setIsLoading(false);
+      setError("Unable to start visualization. Please try again.");
+      return;
+    }
+
+    setJobId(data.jobId);
+    setJobStatus(data.status || "queued");
+    startPolling(data.jobId);
   };
 
   const handleReset = () => {
     setGeneratedImage(null);
     setError(null);
+    setJobId(null);
+    setJobStatus(null);
+    setIsLoading(false);
+    clearPolling();
   };
 
   return (
@@ -162,7 +203,18 @@ function VisualizerContent() {
               className="mb-8 p-4 bg-red-900/30 border border-red-700 rounded-lg flex items-center gap-3"
             >
               <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0" />
-              <p className="text-red-300">{error}</p>
+              <div className="flex-1">
+                <p className="text-red-300">{error}</p>
+              </div>
+              {jobStatus === "failed" && (
+                <Button
+                  onClick={handleGenerate}
+                  variant="outline"
+                  className="border-red-400/60 text-red-200 hover:bg-red-500/10"
+                >
+                  Retry
+                </Button>
+              )}
             </motion.div>
           )}
 
@@ -234,7 +286,9 @@ function VisualizerContent() {
                   {isLoading ? (
                     <>
                       <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      Generating...
+                      {jobStatus === "queued" && "Preparing image"}
+                      {jobStatus === "processing" && "Generating visualization"}
+                      {!jobStatus && "Generating preview…"}
                     </>
                   ) : (
                     <>
