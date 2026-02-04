@@ -1,0 +1,37 @@
+{
+  "energy-efficient": [
+    "/images/windows/energy-efficient/1.jpg",
+    "/images/windows/energy-efficient/2.jpg",
+    "/images/windows/energy-efficient/3.jpg"
+  ],
+  "wood-clad": [
+    "/images/windows/wood-clad/1.jpg",
+    "/images/windows/wood-clad/2.jpg",
+    "/images/windows/wood-clad/3.jpg"
+  ],
+  "wood": [
+    "/images/windows/wood/1.jpg",
+    "/images/windows/wood/2.jpg",
+    "/images/windows/wood/3.jpg"
+  ],
+  "vinyl": [
+    "/images/windows/vinyl/1.jpg",
+    "/images/windows/vinyl/2.jpg",
+    "/images/windows/vinyl/3.jpg"
+  ],
+  "aluminum": [
+    "/images/windows/aluminum/1.jpg",
+    "/images/windows/aluminum/2.jpg",
+    "/images/windows/aluminum/3.jpg"
+  ],
+  "fiberglass": [
+    "/images/windows/fiberglass/1.jpg",
+    "/images/windows/fiberglass/2.jpg",
+    "/images/windows/fiberglass/3.jpg"
+  ],
+  "obscure-glass": [
+    "/images/windows/obscure-glass/1.jpg",
+    "/images/windows/obscure-glass/2.jpg",
+    "/images/windows/obscure-glass/3.jpg"
+  ]
+}
