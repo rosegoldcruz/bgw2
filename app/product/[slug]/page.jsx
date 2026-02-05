@@ -5,6 +5,7 @@ import { useParams, notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { BadgeCheck, ShieldCheck, Truck } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { getProductBySlug, formatPrice, categories, getProductsByCategory } from "@/data/products";
@@ -73,7 +74,7 @@ export default function ProductDetailPage() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Main image */}
-            <div className="relative aspect-[3/4] bg-neutral-900 rounded-sm overflow-hidden mb-4">
+            <div className="relative aspect-[3/4] bg-neutral-900 rounded-xl overflow-hidden mb-4">
               <Image
                 src={product.gallery[selectedImage] || product.image}
                 alt={product.name}
@@ -91,7 +92,7 @@ export default function ProductDetailPage() {
                   <button
                     key={index}
                     onClick={() => setSelectedImage(index)}
-                    className={`relative w-20 h-20 flex-shrink-0 rounded-sm overflow-hidden border-2 transition-all duration-300 ${
+                    className={`relative w-20 h-20 flex-shrink-0 rounded-md overflow-hidden border-2 transition-all duration-300 ${
                       selectedImage === index
                         ? "border-amber-500"
                         : "border-neutral-700 hover:border-neutral-500"
@@ -169,7 +170,7 @@ export default function ProductDetailPage() {
               <Link
                 href="/support"
                 className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 
-                         bg-amber-500 text-neutral-950 font-medium rounded-sm
+                         bg-amber-500 text-neutral-950 font-medium rounded-md
                          hover:bg-amber-400 transition-all duration-300
                          hover:shadow-[0_0_30px_rgba(251,191,36,0.3)]"
               >
@@ -181,7 +182,7 @@ export default function ProductDetailPage() {
               <button
                 onClick={() => setIsFavorite(!isFavorite)}
                 className={`inline-flex items-center justify-center gap-2 px-6 py-4 
-                         border rounded-sm font-medium transition-all duration-300
+                         border rounded-md font-medium transition-all duration-300
                          ${isFavorite 
                            ? "border-red-500/50 text-red-400 bg-red-500/10" 
                            : "border-neutral-700 text-neutral-300 hover:border-neutral-500 hover:text-white"
@@ -195,16 +196,16 @@ export default function ProductDetailPage() {
             {/* Trust badges */}
             <div className="mt-10 pt-8 border-t border-neutral-800">
               <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="text-2xl mb-1">🏭</div>
+                <div className="flex flex-col items-center gap-2">
+                  <BadgeCheck className="w-5 h-5 text-amber-400" />
                   <p className="text-xs text-neutral-500">Made in USA</p>
                 </div>
-                <div>
-                  <div className="text-2xl mb-1">📦</div>
+                <div className="flex flex-col items-center gap-2">
+                  <Truck className="w-5 h-5 text-amber-400" />
                   <p className="text-xs text-neutral-500">Free Shipping</p>
                 </div>
-                <div>
-                  <div className="text-2xl mb-1">🛡️</div>
+                <div className="flex flex-col items-center gap-2">
+                  <ShieldCheck className="w-5 h-5 text-amber-400" />
                   <p className="text-xs text-neutral-500">5 Year Warranty</p>
                 </div>
               </div>
@@ -226,7 +227,7 @@ export default function ProductDetailPage() {
                 href={`/product/${relatedProduct.slug}`}
                 className="group block"
               >
-                <div className="relative aspect-[3/4] bg-neutral-900 rounded-sm overflow-hidden mb-3">
+                <div className="relative aspect-[3/4] bg-neutral-900 rounded-lg overflow-hidden mb-3">
                   <Image
                     src={relatedProduct.image}
                     alt={relatedProduct.name}

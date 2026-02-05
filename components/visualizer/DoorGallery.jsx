@@ -18,9 +18,8 @@ export function DoorGallery({ selectedDoor, onSelectDoor }) {
       <p className="text-sm text-neutral-400 mb-6">
         Choose the door you want to visualize on your home
       </p>
-      
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-h-[500px] overflow-y-auto pr-2
-                    scrollbar-thin scrollbar-thumb-neutral-600 scrollbar-track-neutral-800">
+
+      <div className="flex gap-4 overflow-x-auto pb-4 pr-2 snap-x snap-mandatory lg:grid lg:grid-cols-3 xl:grid-cols-4 lg:overflow-visible lg:pb-0">
         {doorProducts.map((product, index) => {
           const isSelected = selectedDoor?.slug === product.slug;
           
@@ -37,7 +36,8 @@ export function DoorGallery({ selectedDoor, onSelectDoor }) {
                 price: product.price
               })}
               className={`
-                relative group text-left rounded-lg overflow-hidden transition-all duration-300
+                relative group text-left rounded-xl overflow-hidden transition-all duration-300 snap-start
+                min-w-[160px] sm:min-w-[180px] lg:min-w-0
                 ${isSelected 
                   ? "ring-2 ring-amber-400 ring-offset-2 ring-offset-neutral-900" 
                   : "hover:ring-1 hover:ring-neutral-600"

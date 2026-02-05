@@ -76,7 +76,6 @@ export function NewsletterSection() {
 
                   <motion.button
                     type="submit"
-                    type="submit"
                     className="w-full bg-neutral-900 text-white py-3 lg:py-4 rounded-full font-medium hover:bg-neutral-800 transition-all duration-200"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}

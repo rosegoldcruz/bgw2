@@ -2,6 +2,7 @@
 
 import { useState, useEffect, Suspense, useRef } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Loader2, Sparkles, AlertCircle } from "lucide-react";
 import { Header } from "@/components/header";
@@ -123,7 +124,7 @@ function VisualizerContent() {
 
     // Construct absolute URL for door image
     const origin = typeof window !== "undefined" ? window.location.origin : "";
-    const doorImageUrl = `${origin}${selectedDoor.image}`;
+    const doorImageUrl = new URL(selectedDoor.image, origin).toString();
 
     let data = null;
     try {
@@ -135,6 +136,7 @@ function VisualizerContent() {
         body: JSON.stringify({
           homeImageUrl: uploadedImage,
           doorImageUrl,
+          doorName: selectedDoor?.name || "",
         }),
       });
 
@@ -200,7 +202,7 @@ function VisualizerContent() {
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mb-8 p-4 bg-red-900/30 border border-red-700 rounded-lg flex items-center gap-3"
+              className="mb-8 p-4 bg-red-900/30 border border-red-700 rounded-xl flex items-center gap-3"
             >
               <AlertCircle className="w-5 h-5 text-red-400 flex-shrink-0" />
               <div className="flex-1">
@@ -246,65 +248,124 @@ function VisualizerContent() {
                   Download Result
                 </Button>
               </div>
+
+              <div className="border border-neutral-800 bg-neutral-900/60 rounded-xl p-6 md:p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.3em] text-amber-400 mb-2">Next Step</p>
+                    <h3 className="text-2xl font-light text-white mb-2">
+                      Love it? Start your project.
+                    </h3>
+                    <p className="text-sm text-neutral-400 max-w-xl">
+                      Get pricing, availability, and project guidance for this exact door.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-3">
+                    {selectedDoor?.slug && (
+                      <Link href={`/product/${selectedDoor.slug}`}>
+                        <Button variant="outline" className="border-neutral-700 text-white hover:bg-neutral-800">
+                          View Door Details
+                        </Button>
+                      </Link>
+                    )}
+                    {selectedDoor?.slug ? (
+                      <Link href={`/product/${selectedDoor.slug}`}>
+                        <Button className="bg-white text-neutral-950 hover:bg-neutral-100">
+                          Get Pricing
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Button disabled className="bg-white/30 text-neutral-500 cursor-not-allowed">
+                        Get Pricing
+                      </Button>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
           ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Left Column - Upload */}
-              <div>
-                <ImageUploader
-                  onImageCapture={setUploadedImage}
-                  uploadedImage={uploadedImage}
-                  onClear={() => setUploadedImage(null)}
-                />
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+              {/* Step 1 - Door Selection */}
+              <div className="lg:col-span-7 space-y-10">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.3em] text-amber-400 mb-3">Step 1</p>
+                  <h2 className="text-2xl md:text-3xl font-light text-white mb-3">Choose a door style</h2>
+                  <DoorGallery
+                    selectedDoor={selectedDoor}
+                    onSelectDoor={setSelectedDoor}
+                  />
+                </div>
 
-                {/* Selected Door Preview */}
-                {selectedDoor && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="mt-6 p-4 bg-neutral-800 rounded-lg flex items-center gap-4"
-                  >
-                    <img
-                      src={selectedDoor.image}
-                      alt={selectedDoor.name}
-                      className="w-16 h-20 object-cover rounded"
-                    />
-                    <div className="flex-1">
-                      <p className="text-sm text-neutral-400">Selected Door</p>
-                      <p className="text-white font-medium">{selectedDoor.name}</p>
-                    </div>
-                  </motion.div>
-                )}
-
-                {/* Generate Button */}
-                <Button
-                  onClick={handleGenerate}
-                  disabled={isLoading || !uploadedImage || !selectedDoor}
-                  className="w-full mt-6 py-6 text-lg bg-amber-500 text-neutral-900 
-                           hover:bg-amber-400 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isLoading ? (
-                    <>
-                      <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                      {jobStatus === "queued" && "Preparing image"}
-                      {jobStatus === "processing" && "Generating visualization"}
-                      {!jobStatus && "Generating preview…"}
-                    </>
-                  ) : (
-                    <>
-                      <Sparkles className="w-5 h-5 mr-2" />
-                      Visualize Door
-                    </>
-                  )}
-                </Button>
+                {/* Step 2 - Upload */}
+                <div>
+                  <p className="text-xs uppercase tracking-[0.3em] text-amber-400 mb-3">Step 2</p>
+                  <h2 className="text-2xl md:text-3xl font-light text-white mb-4">Upload your doorway</h2>
+                  <ImageUploader
+                    onImageCapture={setUploadedImage}
+                    uploadedImage={uploadedImage}
+                    onClear={() => setUploadedImage(null)}
+                  />
+                </div>
               </div>
 
-              {/* Right Column - Door Gallery */}
-              <div>
-                <DoorGallery
-                  selectedDoor={selectedDoor}
-                  onSelectDoor={setSelectedDoor}
-                />
+              {/* Step 3 - Generate */}
+              <div className="lg:col-span-5">
+                <div className="lg:sticky lg:top-28 space-y-6">
+                  <div className="p-6 bg-neutral-900 rounded-xl border border-neutral-800">
+                    <p className="text-xs uppercase tracking-[0.3em] text-amber-400 mb-3">Step 3</p>
+                    <h2 className="text-2xl font-light text-white mb-3">Generate your preview</h2>
+                    <p className="text-sm text-neutral-400 mb-6">
+                      We’ll blend your selected door into your photo with matched lighting and scale.
+                    </p>
+
+                    {selectedDoor ? (
+                      <div className="mb-6 flex items-center gap-4">
+                        <img
+                          src={selectedDoor.image}
+                          alt={selectedDoor.name}
+                          className="w-16 h-20 object-cover rounded-lg border border-neutral-700"
+                        />
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">Selected Door</p>
+                          <p className="text-white font-medium">{selectedDoor.name}</p>
+                          {selectedDoor?.slug && (
+                            <Link
+                              href={`/product/${selectedDoor.slug}`}
+                              className="text-xs text-amber-400 hover:text-amber-300 transition-colors"
+                            >
+                              View product details
+                            </Link>
+                          )}
+                        </div>
+                      </div>
+                    ) : (
+                      <p className="text-sm text-neutral-500 mb-6">
+                        Select a door to continue.
+                      </p>
+                    )}
+
+                    <Button
+                      onClick={handleGenerate}
+                      disabled={isLoading || !uploadedImage || !selectedDoor}
+                      className="w-full py-6 text-lg bg-amber-500 text-neutral-900 
+                               hover:bg-amber-400 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isLoading ? (
+                        <>
+                          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                          {jobStatus === "queued" && "Preparing image"}
+                          {jobStatus === "processing" && "Generating visualization"}
+                          {!jobStatus && "Generating preview…"}
+                        </>
+                      ) : (
+                        <>
+                          <Sparkles className="w-5 h-5 mr-2" />
+                          Visualize Door
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           )}

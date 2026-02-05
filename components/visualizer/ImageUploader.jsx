@@ -78,7 +78,7 @@ export function ImageUploader({ onImageCapture, uploadedImage, onClear }) {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-neutral-800"
+            className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-neutral-800"
           >
             <img
               src={uploadedImage}
@@ -104,7 +104,7 @@ export function ImageUploader({ onImageCapture, uploadedImage, onClear }) {
             onDrop={handleDrop}
             onClick={handleClick}
             className={`
-              w-full aspect-[4/3] rounded-lg border-2 border-dashed cursor-pointer
+              w-full aspect-[4/3] rounded-xl border-2 border-dashed cursor-pointer
               flex flex-col items-center justify-center gap-4 transition-all duration-300
               ${isDragging 
                 ? "border-amber-400 bg-amber-400/10" 

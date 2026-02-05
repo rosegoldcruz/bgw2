@@ -71,7 +71,7 @@ export function CategoryHero({ category }) {
           <button
             onClick={scrollToAnchor}
             className="group inline-flex items-center gap-3 px-8 py-4 bg-amber-500 text-neutral-950 
-                     font-medium rounded-sm hover:bg-amber-400 transition-all duration-300
+                     font-medium rounded-md hover:bg-amber-400 transition-all duration-300
                      hover:shadow-[0_0_30px_rgba(251,191,36,0.3)]"
           >
             Browse Collection

@@ -82,16 +82,15 @@ export function FeaturedProducts() {
   }
 
   return (
-    <section className="pt-20 pb-6 lg:py-32 relative overflow-hidden bg-neutral-900" id="featured-products">
+    <section className="pt-20 pb-6 lg:py-32 relative overflow-hidden bg-neutral-950" id="featured-products">
       <div className="container-custom relative z-10">
         <Reveal>
           <div className="text-left mb-16">
-            <h2 className="text-4xl text-white mb-4 lg:text-6xl">
-              Featured <span className="italic font-light">Collection</span>
+            <h2 className="text-4xl text-white mb-4 lg:text-5xl font-light">
+              Featured <span className="italic">Collections</span>
             </h2>
-            <p className="text-lg text-white/70 max-w-2xl">
-              Discover our most beloved pieces, each crafted with meticulous attention to detail and timeless design
-              principles.
+            <p className="text-base md:text-lg text-white/70 max-w-2xl">
+              Hand-selected door families that anchor the most requested projects.
             </p>
           </div>
         </Reveal>
@@ -126,7 +125,7 @@ export function FeaturedProducts() {
               }}
             >
               <Reveal delay={index * 0.1}>
-                <div className="rounded-[32px] border border-white/10 bg-white/5 p-1 shadow-[0_10px_60px_rgba(0,0,0,0.4)]">
+                <div className="rounded-xl border border-white/10 bg-white/5 p-1 card-elevation-1">
                   <ProductCard product={product} onQuickLook={handleQuickLook} />
                 </div>
               </Reveal>

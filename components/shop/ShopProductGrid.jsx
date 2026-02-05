@@ -2,6 +2,7 @@
 
 import { ShopProductCard } from "./ShopProductCard";
 import { getProductsByCategory, categories } from "@/data/products";
+import { Mail } from "lucide-react";
 
 export function ShopProductGrid({ categoryId }) {
   const category = categories.find((c) => c.id === categoryId);
@@ -22,20 +23,22 @@ export function ShopProductGrid({ categoryId }) {
           </div>
           
           {/* Coming soon placeholder */}
-          <div className="flex flex-col items-center justify-center py-20 border border-dashed border-neutral-700 rounded-sm">
-            <div className="text-6xl mb-4">🏗️</div>
-            <p className="text-xl text-neutral-400 mb-2">Coming Soon</p>
-            <p className="text-neutral-500 text-center max-w-md">
+          <div className="flex flex-col items-center justify-center py-20 border border-neutral-800 rounded-xl bg-neutral-900/60 text-center">
+            <div className="w-14 h-14 rounded-full border border-neutral-700 flex items-center justify-center mb-4">
+              <Mail className="w-6 h-6 text-amber-400" />
+            </div>
+            <p className="text-xl text-white mb-2">Concierge Inquiry</p>
+            <p className="text-neutral-400 text-center max-w-md">
               {categoryId === "cabinets" 
-                ? "Custom cabinet refacing configurator launching soon. Contact us for consultations."
-                : "Our window collection is being curated. Contact us for custom window solutions."}
+                ? "Custom cabinet refacing is built to order. Tell us your space and we’ll guide the options."
+                : "Our window collection is curated per project. Share your requirements and we’ll respond with recommendations."}
             </p>
             <a 
               href="/support"
-              className="mt-8 px-6 py-3 border border-amber-500 text-amber-500 rounded-sm
+              className="mt-8 px-6 py-3 border border-amber-500 text-amber-400 rounded-md
                        hover:bg-amber-500 hover:text-neutral-950 transition-all duration-300"
             >
-              Contact Us
+              Start a Project
             </a>
           </div>
         </div>
@@ -60,7 +63,7 @@ export function ShopProductGrid({ categoryId }) {
         </div>
 
         {/* Product grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <ShopProductCard key={product.id} product={product} index={index} />
           ))}

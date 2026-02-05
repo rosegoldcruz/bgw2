@@ -50,7 +50,7 @@ export function BeforeAfterSlider({ beforeImage, afterImage }) {
     >
       <div
         ref={containerRef}
-        className="relative w-full aspect-[4/3] rounded-lg overflow-hidden cursor-ew-resize select-none"
+        className="relative w-full aspect-[4/3] rounded-xl overflow-hidden cursor-ew-resize select-none"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
@@ -96,10 +96,10 @@ export function BeforeAfterSlider({ beforeImage, afterImage }) {
         </div>
 
         {/* Labels */}
-        <div className="absolute bottom-4 left-4 px-3 py-1 bg-black/70 rounded text-sm text-white">
+        <div className="absolute bottom-4 left-4 px-3 py-1 bg-black/70 rounded-md text-sm text-white">
           Before
         </div>
-        <div className="absolute bottom-4 right-4 px-3 py-1 bg-black/70 rounded text-sm text-white">
+        <div className="absolute bottom-4 right-4 px-3 py-1 bg-black/70 rounded-md text-sm text-white">
           After
         </div>
       </div>

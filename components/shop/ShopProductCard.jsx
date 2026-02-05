@@ -18,7 +18,7 @@ export function ShopProductCard({ product, index = 0 }) {
       }}
       viewport={{ once: true, margin: "-50px" }}
     >
-      <div className="group block bg-neutral-900 rounded-sm overflow-hidden border border-neutral-800
+      <div className="group block bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800/80
                  hover:border-neutral-700 transition-all duration-500">
         {/* Image container */}
         <Link href={`/product/${product.slug}`}>
@@ -34,7 +34,7 @@ export function ShopProductCard({ product, index = 0 }) {
             {/* Hover overlay */}
             <div className="absolute inset-0 bg-neutral-950/0 group-hover:bg-neutral-950/60 
                           transition-all duration-500 flex items-center justify-center">
-              <span className="px-6 py-3 bg-amber-500 text-neutral-950 font-medium rounded-sm
+              <span className="px-6 py-3 bg-amber-500 text-neutral-950 font-medium rounded-md
                             opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0
                             transition-all duration-500 shadow-lg">
                 View Door
@@ -62,14 +62,13 @@ export function ShopProductCard({ product, index = 0 }) {
             href={`/visualizer?door=${product.slug}`}
             className="mt-3 w-full flex items-center justify-center gap-2 py-2.5 px-4 
                      bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-sm font-medium 
-                     rounded transition-colors duration-300"
+                     rounded-md transition-colors duration-300"
           >
             <Eye className="w-4 h-4" />
-            VISUALIZE ON YOUR HOME NOW
+            Visualize on your home
           </Link>
         </div>
       </div>
     </motion.div>
   );
 }
-

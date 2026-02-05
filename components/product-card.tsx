@@ -34,14 +34,10 @@ export function ProductCard({ product, onQuickLook }: ProductCardProps) {
   return (
     <Link href={href} className="block">
     <motion.div
-      className="group relative bg-white overflow-hidden"
-      style={{
-        borderRadius: "24px",
-        boxShadow: "rgba(0, 0, 0, 0.1) 0px 10px 50px",
-      }}
-      whileHover={{ scale: 1.03, rotate: -1.8, y: -10, boxShadow: "0 20px 60px rgba(0,0,0,0.45)" }}
-      whileTap={{ scale: 0.99, rotate: 0 }}
-      transition={{ duration: 0.35, ease: [0.21, 0.47, 0.32, 0.98] }}
+      className="group relative bg-white overflow-hidden rounded-xl card-elevation-1 transition-shadow hover:card-elevation-2"
+      whileHover={{ scale: 1.02, y: -6 }}
+      whileTap={{ scale: 0.99 }}
+      transition={{ duration: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
       layout
     >
       {/* Badge */}

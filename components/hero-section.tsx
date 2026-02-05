@@ -83,44 +83,24 @@ export function HeroSection() {
             {/* Left Column - Text Content */}
             <div className="text-left text-white py-20 lg:py-0 max-w-2xl">
               <Reveal>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight mb-6 drop-shadow-lg">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight tracking-tight mb-6 drop-shadow-lg">
                   <span className="block whitespace-nowrap">
-                    <AnimatedText text="Elevated Doors For" delay={0.5} />
+                    <AnimatedText text="See It On" delay={0.5} />
                   </span>
                   <span className="italic font-light block">
-                    <AnimatedText text="Modern Spaces" delay={1.1} />
+                    <AnimatedText text="Your Home" delay={1.1} />
                   </span>
                 </h1>
               </Reveal>
 
               <Reveal delay={0.2}>
                 <motion.p
-                  className="text-base md:text-lg text-white/95 mb-8 leading-relaxed drop-shadow-md"
+                  className="text-base md:text-lg text-white/90 mb-8 leading-relaxed drop-shadow-md max-w-xl"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
                 >
-                  Design-driven. Project-ready. Built to last.
-                </motion.p>
-              </Reveal>
-
-              <Reveal delay={0.3}>
-                <motion.p
-                  className="text-base md:text-lg text-white/95 leading-relaxed mb-8 drop-shadow-md"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.9, ease: [0.21, 0.47, 0.32, 0.98] }}
-                >
-                  Call Us: <a href="tel:+19097891818" className="hover:text-white transition-colors underline">(909) 789-1818</a><br />
-                  Open Mon – Fri<br />
-                  <a 
-                    href="https://www.google.com/maps/place/BGW+Doors/@34.0426308,-117.6423059,17z/data=!3m1!4b1!4m6!3m5!1s0x80c335611518531f:0x4d2d4646993855a9!8m2!3d34.0426264!4d-117.6397256!16s%2Fg%2F11r49qshsy?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors underline"
-                  >
-                    753 E Francis St, Ontario, CA
-                  </a>
+                  Upload a photo. Choose a door. Get a photoreal preview in seconds.
                 </motion.p>
               </Reveal>
 
@@ -131,14 +111,14 @@ export function HeroSection() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 1.1, ease: [0.21, 0.47, 0.32, 0.98] }}
                 >
-                  <Link href="/shop">
+                  <Link href="/visualizer">
                     <Button size="lg" className="bg-white text-neutral-900 hover:bg-white/90 shadow-lg">
-                      Shop Doors
+                      Visualize on Your Home
                     </Button>
                   </Link>
-                  <Link href="/visualizer">
-                    <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 shadow-lg">
-                      View on Your Home
+                  <Link href="/shop">
+                    <Button size="lg" variant="outline" className="border-2 border-white/70 text-white hover:bg-white/10 shadow-lg">
+                      Browse Collections
                     </Button>
                   </Link>
                 </motion.div>

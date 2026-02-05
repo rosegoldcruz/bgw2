@@ -32,7 +32,7 @@ export function AboutSection() {
             </div>
           </Reveal>
           <Reveal delay={0.2}>
-            <div className="relative aspect-[4/3] rounded-sm overflow-hidden">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
               <Image
                 src="/Glass Luxury.png"
                 alt="BGW Doors craftsmanship"
@@ -58,7 +58,7 @@ export function AboutSection() {
           {/* Pillar 1 - Craftsmanship */}
           <Reveal delay={0.1}>
             <motion.div
-              className="bg-neutral-900 border border-neutral-800 p-8 rounded-sm h-full"
+              className="bg-neutral-900 border border-neutral-800 p-8 rounded-xl h-full"
               whileHover={{ y: -5, borderColor: "rgba(251, 191, 36, 0.3)" }}
               transition={{ duration: 0.3 }}
             >
@@ -78,7 +78,7 @@ export function AboutSection() {
           {/* Pillar 2 - Materials */}
           <Reveal delay={0.2}>
             <motion.div
-              className="bg-neutral-900 border border-neutral-800 p-8 rounded-sm h-full"
+              className="bg-neutral-900 border border-neutral-800 p-8 rounded-xl h-full"
               whileHover={{ y: -5, borderColor: "rgba(251, 191, 36, 0.3)" }}
               transition={{ duration: 0.3 }}
             >
@@ -98,7 +98,7 @@ export function AboutSection() {
           {/* Pillar 3 - Service */}
           <Reveal delay={0.3}>
             <motion.div
-              className="bg-neutral-900 border border-neutral-800 p-8 rounded-sm h-full"
+              className="bg-neutral-900 border border-neutral-800 p-8 rounded-xl h-full"
               whileHover={{ y: -5, borderColor: "rgba(251, 191, 36, 0.3)" }}
               transition={{ duration: 0.3 }}
             >

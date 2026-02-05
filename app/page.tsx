@@ -6,7 +6,6 @@ import { CollectionStrip } from "@/components/collection-strip"
 import { AboutSection } from "@/components/about-section"
 import { NewsletterSection } from "@/components/newsletter-section"
 import { Footer } from "@/components/footer"
-import { DoorQuizModal } from "@/components/door-quiz-modal"
 
 export default function HomePage() {
   return (
@@ -18,7 +17,6 @@ export default function HomePage() {
       <AboutSection />
       <NewsletterSection />
       <Footer />
-      <DoorQuizModal />
     </main>
   )
 }

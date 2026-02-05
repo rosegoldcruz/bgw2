@@ -8,13 +8,13 @@ export function Footer() {
   return (
     <footer className="bg-neutral-900 border-t border-white/10 text-gray-300">
       <div className="container-custom py-16 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
-          {/* Column 1 - Brand */}
-          <div className="lg:col-span-1 space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 mb-16">
+          {/* Brand */}
+          <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white">BGW Doors</h3>
-              <p className="text-sm leading-relaxed text-gray-400">
-                Premium fiberglass, wood, iron doors, cabinets, windows, and hardware engineered for nationwide delivery. Built for security, performance, and elevated curb appeal.
+              <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
+                Premium doors engineered for performance, crafted for architectural impact.
               </p>
             </div>
             
@@ -54,52 +54,25 @@ export function Footer() {
             </a>
           </div>
 
-          {/* Column 2 - Products */}
+          {/* Collections */}
           <div>
-            <h4 className="font-semibold text-white mb-6">Products</h4>
+            <h4 className="font-semibold text-white mb-6">Collections</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="/shop?category=iron" className="hover:text-white transition-colors">Iron Doors</a></li>
-              <li><a href="/shop?category=fiberglass" className="hover:text-white transition-colors">Fiberglass Doors</a></li>
-              <li><a href="/shop?category=wood" className="hover:text-white transition-colors">Wood Doors</a></li>
-              <li><a href="/shop?category=slab" className="hover:text-white transition-colors">Slab Doors</a></li>
-              <li><a href="/cabinets" className="hover:text-white transition-colors">Cabinets</a></li>
-              <li><a href="/windows" className="hover:text-white transition-colors">Windows</a></li>
-              <li><a href="/hardware" className="hover:text-white transition-colors">Door Hardware</a></li>
+              <li><a href="/shop/iron" className="hover:text-white transition-colors">Iron Doors</a></li>
+              <li><a href="/shop/wood" className="hover:text-white transition-colors">Wood Doors</a></li>
+              <li><a href="/shop/fiberglass" className="hover:text-white transition-colors">Fiberglass Doors</a></li>
+              <li><a href="/shop/slab" className="hover:text-white transition-colors">Slab Doors</a></li>
             </ul>
           </div>
 
-          {/* Column 3 - Tools */}
-          <div>
-            <h4 className="font-semibold text-white mb-6">Tools</h4>
-            <ul className="space-y-4 text-sm">
-              <li><a href="/visualizer" className="hover:text-white transition-colors">Door Visualizer</a></li>
-              <li><a href="/visualizer/cabinets" className="hover:text-white transition-colors">Cabinet Visualizer</a></li>
-            </ul>
-          </div>
-
-          {/* Column 4 - Company */}
+          {/* Company */}
           <div>
             <h4 className="font-semibold text-white mb-6">Company</h4>
             <ul className="space-y-4 text-sm">
               <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="/craftsmanship" className="hover:text-white transition-colors">Craftsmanship</a></li>
-              <li><a href="/sustainability" className="hover:text-white transition-colors">Sustainability</a></li>
-              <li><a href="/careers" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="/press" className="hover:text-white transition-colors">Press</a></li>
-              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Column 5 - Support */}
-          <div>
-            <h4 className="font-semibold text-white mb-6">Support</h4>
-            <ul className="space-y-4 text-sm">
-              <li><a href="/shipping" className="hover:text-white transition-colors">Shipping & Delivery</a></li>
+              <li><a href="/visualizer" className="hover:text-white transition-colors">Door Visualizer</a></li>
+              <li><a href="/shipping" className="hover:text-white transition-colors">Shipping</a></li>
               <li><a href="/warranty" className="hover:text-white transition-colors">Warranty</a></li>
-              <li><a href="/installation" className="hover:text-white transition-colors">Installation Guide</a></li>
-              <li><a href="/care" className="hover:text-white transition-colors">Care & Maintenance</a></li>
-              <li><a href="/faqs" className="hover:text-white transition-colors">FAQs</a></li>
-              <li><a href="/returns" className="hover:text-white transition-colors">Returns</a></li>
             </ul>
           </div>
         </div>

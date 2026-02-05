@@ -37,7 +37,7 @@ export default function ShopPage() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category, index) => (
               <motion.div
                 key={category.id}
@@ -48,7 +48,7 @@ export default function ShopPage() {
               >
                 <Link
                   href={`/shop/${category.id}`}
-                  className="group block relative aspect-[4/5] rounded-sm overflow-hidden bg-neutral-900"
+                  className="group block relative aspect-[4/5] rounded-xl overflow-hidden bg-neutral-900 border border-neutral-800/80"
                 >
                   <Image
                     src={categoryImages[category.id] || "/placeholder.svg"}

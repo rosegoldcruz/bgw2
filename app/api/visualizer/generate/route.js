@@ -5,11 +5,26 @@ export const dynamic = "force-dynamic";
 
 const REPLICATE_URL = "https://api.replicate.com/v1/predictions";
 
-const BASE_PROMPT =
-  "A photorealistic depiction of the user's uploaded home photo, with the existing front door and its frame replaced by the selected reference door image. The new door must be perfectly integrated into the existing opening, matching scale, perspective, and alignment. Preserve the original wall material, siding, trim, floor, steps, and surrounding environment exactly as they appear. Lighting, shadows, and reflections must match the original photo. The result should look like a real professional architectural photograph of the door already installed. Ultra-detailed, sharp focus, natural colors, seamless integration, no visible editing artifacts.";
+const buildPrompt = (doorName) => {
+  const nameLine = doorName ? `The selected door is "${doorName}".` : "";
+  return [
+    "You are given two images: (1) the user's home photo and (2) the selected door reference image.",
+    "Replace ONLY the existing front door within its current opening in image 1 with the exact door from image 2.",
+    nameLine,
+    "Use the reference door as ground truth for panel layout, glass pattern, lite arrangement, molding details, and finish color.",
+    "Do not invent or swap designs. Do not change the door style, glass pattern, or proportions.",
+    "Do not add sidelites, transoms, double doors, or change the opening size unless they already exist in image 1.",
+    "Ignore the background of the reference door image; extract only the door itself.",
+    "Preserve the house, siding, trim, steps, windows, garage, driveway, landscaping, and sky exactly as in image 1.",
+    "Match camera perspective, scale, lens, lighting, shadows, and reflections to the original photo.",
+    "Result must look like a real photograph with only the door replaced.",
+  ]
+    .filter(Boolean)
+    .join(" ");
+};
 
 const NEGATIVE_PROMPT =
-  "people, hands, tools, construction, distortion, warped geometry, incorrect perspective, mismatched lighting, blur, low resolution, artifacts, watermark, logo, text, extra objects";
+  "different door design, wrong glass pattern, different panel count, mismatched finish, added sidelites, added transom, double doors, enlarged opening, moved doorway, changed siding, new steps, extra railings, new columns, zoomed crop, skewed perspective, warped geometry, halos, seams, blur, low resolution, artifacts, watermark, logo, text, extra objects";
 
 async function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -61,7 +76,7 @@ async function pollPrediction(jobId, predictionId, token) {
   updateJob(jobId, { status: "failed", imageUrl: null });
 }
 
-async function processJob(jobId, { homeImageUrl, doorImageUrl }) {
+async function processJob(jobId, { homeImageUrl, doorImageUrl, doorName }) {
   const fail = () => updateJob(jobId, { status: "failed", imageUrl: null });
 
   if (!homeImageUrl || !doorImageUrl) {
@@ -88,7 +103,7 @@ async function processJob(jobId, { homeImageUrl, doorImageUrl }) {
       body: JSON.stringify({
         version: "google/nano-banana",
         input: {
-          prompt: BASE_PROMPT,
+          prompt: buildPrompt(doorName),
           negative_prompt: NEGATIVE_PROMPT,
           image_input: [homeImageUrl, doorImageUrl],
         },
@@ -125,13 +140,12 @@ export async function POST(request) {
   const job = createJob();
 
   const body = await request.json().catch(() => ({}));
-  const { homeImageUrl, doorImageUrl } = body || {};
+  const { homeImageUrl, doorImageUrl, doorName } = body || {};
 
-  processJob(job.id, { homeImageUrl, doorImageUrl });
+  processJob(job.id, { homeImageUrl, doorImageUrl, doorName });
 
   return NextResponse.json({
     jobId: job.id,
     status: "queued",
   });
 }
-

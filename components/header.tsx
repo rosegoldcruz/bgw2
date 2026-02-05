@@ -1,53 +1,54 @@
 // components/header.tsx
 "use client"
 
-import { motion } from "framer-motion"
-import { StickerPeel } from "@/components/ui/sticker-peel"
+import Link from "next/link"
 import Image from "next/image"
+import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
-    <motion.div
-      className="fixed top-8 left-0 right-0 z-50 flex justify-center pt-[env(safe-area-inset-top,0px)]"
-      initial={{ y: -100, opacity: 0 }}
+    <motion.header
+      className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-neutral-950/80 backdrop-blur-md"
+      initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
     >
-      <motion.a
-        href="#"
-        whileHover={{ scale: 1.04 }}
-        transition={{ duration: 0.2 }}
-        aria-label="BGW Doors Home"
-        className="inline-block"
-      >
-        {/* Plain image on mobile - no clipping */}
-        <div className="sm:hidden">
+      <div className="container-custom flex items-center justify-between py-4">
+        <Link href="/" aria-label="BGW Doors Home" className="flex items-center">
           <Image
             src="/bgw.png"
             alt="BGW Doors logo"
-            width={200}
-            height={80}
-            className="w-[200px] h-auto"
+            width={160}
+            height={60}
+            className="h-8 w-auto sm:h-9"
             priority
           />
+        </Link>
+
+        <nav className="hidden md:flex items-center gap-8 text-sm text-neutral-300">
+          <Link href="/visualizer" className="hover:text-white transition-colors">
+            Visualizer
+          </Link>
+          <Link href="/shop" className="hover:text-white transition-colors">
+            Shop
+          </Link>
+          <Link href="/#collections" className="hover:text-white transition-colors">
+            Collections
+          </Link>
+          <Link href="/#about" className="hover:text-white transition-colors">
+            About
+          </Link>
+        </nav>
+
+        <div className="flex items-center gap-3">
+          <Link href="/visualizer">
+            <Button className="bg-white text-neutral-950 hover:bg-neutral-100">
+              Start Your Project
+            </Button>
+          </Link>
         </div>
-        
-        {/* Sticker peel effect on desktop only */}
-        <div className="hidden sm:block">
-          <StickerPeel
-            imageSrc="/bgw.png"
-            alt="BGW Doors logo"
-            width={200}
-            rotate={-4}
-            peelDirection={14}
-            peelBackHoverPct={24}
-            peelBackActivePct={34}
-            shadowIntensity={0.65}
-            lightingIntensity={0.16}
-            initialPosition="center"
-          />
-        </div>
-      </motion.a>
-    </motion.div>
+      </div>
+    </motion.header>
   )
 }
