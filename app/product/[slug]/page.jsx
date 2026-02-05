@@ -9,6 +9,8 @@ import { BadgeCheck, ShieldCheck, Truck } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { getProductBySlug, formatPrice, categories, getProductsByCategory } from "@/data/products";
+import { Button } from "@/components/ui/button";
+import { useCart } from "@/components/cart/cart-context";
 
 function HeartIcon({ filled }) {
   return (
@@ -32,10 +34,18 @@ export default function ProductDetailPage() {
   const product = getProductBySlug(params.slug);
   const [selectedImage, setSelectedImage] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
+  const [addedToCart, setAddedToCart] = useState(false);
+  const { addItem } = useCart();
 
   if (!product) {
     notFound();
   }
+
+  const handleAddToCart = () => {
+    addItem(product, 1);
+    setAddedToCart(true);
+    setTimeout(() => setAddedToCart(false), 2000);
+  };
 
   const category = categories.find((c) => c.id === product.category);
   const relatedProducts = getProductsByCategory(product.category)
@@ -166,31 +176,44 @@ export default function ProductDetailPage() {
             )}
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/support"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 
-                         bg-amber-500 text-neutral-950 font-medium rounded-md
-                         hover:bg-amber-400 transition-all duration-300
-                         hover:shadow-[0_0_30px_rgba(251,191,36,0.3)]"
+            <div className="space-y-4">
+              <Button
+                onClick={handleAddToCart}
+                className="w-full bg-white text-neutral-950 hover:bg-neutral-100"
               >
-                Request Quote
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
-              <button
-                onClick={() => setIsFavorite(!isFavorite)}
-                className={`inline-flex items-center justify-center gap-2 px-6 py-4 
-                         border rounded-md font-medium transition-all duration-300
-                         ${isFavorite 
-                           ? "border-red-500/50 text-red-400 bg-red-500/10" 
-                           : "border-neutral-700 text-neutral-300 hover:border-neutral-500 hover:text-white"
-                         }`}
-              >
-                <HeartIcon filled={isFavorite} />
-                {isFavorite ? "Saved" : "Add to Favorites"}
-              </button>
+                {addedToCart ? "Added to Cart" : "Add to Cart"}
+              </Button>
+              {addedToCart && (
+                <Link href="/cart" className="text-sm text-amber-400 hover:text-amber-300 transition-colors">
+                  View cart →
+                </Link>
+              )}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/support"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 
+                           bg-amber-500 text-neutral-950 font-medium rounded-md
+                           hover:bg-amber-400 transition-all duration-300
+                           hover:shadow-[0_0_30px_rgba(251,191,36,0.3)]"
+                >
+                  Request Quote
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+                <button
+                  onClick={() => setIsFavorite(!isFavorite)}
+                  className={`inline-flex items-center justify-center gap-2 px-6 py-4 
+                           border rounded-md font-medium transition-all duration-300
+                           ${isFavorite 
+                             ? "border-red-500/50 text-red-400 bg-red-500/10" 
+                             : "border-neutral-700 text-neutral-300 hover:border-neutral-500 hover:text-white"
+                           }`}
+                >
+                  <HeartIcon filled={isFavorite} />
+                  {isFavorite ? "Saved" : "Add to Favorites"}
+                </button>
+              </div>
             </div>
 
             {/* Trust badges */}

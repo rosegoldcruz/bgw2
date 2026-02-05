@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import { CartDrawer } from "@/components/cart/cart-drawer"
 
 export function Header() {
   return (
@@ -36,12 +37,16 @@ export function Header() {
           <Link href="/#collections" className="hover:text-white transition-colors">
             Collections
           </Link>
+          <Link href="/cart" className="hover:text-white transition-colors">
+            Cart
+          </Link>
           <Link href="/#about" className="hover:text-white transition-colors">
             About
           </Link>
         </nav>
 
         <div className="flex items-center gap-3">
+          <CartDrawer />
           <Link href="/visualizer">
             <Button className="bg-white text-neutral-950 hover:bg-neutral-100">
               Start Your Project

@@ -12,6 +12,9 @@ import { DoorGallery } from "@/components/visualizer/DoorGallery";
 import { BeforeAfterSlider } from "@/components/visualizer/BeforeAfterSlider";
 import { products } from "@/data/products";
 import { Button } from "@/components/ui/button";
+import { LeadCaptureForm } from "@/components/leads/LeadCaptureForm";
+import { useCart } from "@/components/cart/cart-context";
+import { DoorQuizModal } from "@/components/quiz/DoorQuizModal";
 
 function VisualizerContent() {
   const searchParams = useSearchParams();
@@ -25,6 +28,12 @@ function VisualizerContent() {
   const [jobId, setJobId] = useState(null);
   const [jobStatus, setJobStatus] = useState(null);
   const pollRef = useRef(null);
+  const { addItem } = useCart();
+  const [cartAdded, setCartAdded] = useState(false);
+
+  const selectedProduct = selectedDoor
+    ? products.find((product) => product.slug === selectedDoor.slug)
+    : null;
 
   // Preselect door if slug is provided in URL
   useEffect(() => {
@@ -169,6 +178,13 @@ function VisualizerContent() {
     clearPolling();
   };
 
+  const handleAddToCart = () => {
+    if (!selectedProduct) return;
+    addItem(selectedProduct, 1);
+    setCartAdded(true);
+    setTimeout(() => setCartAdded(false), 2000);
+  };
+
   return (
     <main className="min-h-screen bg-neutral-950">
       <Header />
@@ -268,20 +284,27 @@ function VisualizerContent() {
                         </Button>
                       </Link>
                     )}
-                    {selectedDoor?.slug ? (
-                      <Link href={`/product/${selectedDoor.slug}`}>
-                        <Button className="bg-white text-neutral-950 hover:bg-neutral-100">
-                          Get Pricing
-                        </Button>
-                      </Link>
-                    ) : (
-                      <Button disabled className="bg-white/30 text-neutral-500 cursor-not-allowed">
-                        Get Pricing
-                      </Button>
-                    )}
+                    <Button
+                      onClick={handleAddToCart}
+                      disabled={!selectedProduct}
+                      className="bg-white text-neutral-950 hover:bg-neutral-100"
+                    >
+                      {cartAdded ? "Added to Cart" : "Add to Cart"}
+                    </Button>
                   </div>
                 </div>
               </div>
+
+              <LeadCaptureForm
+                title="Request pricing for this door"
+                description="Share your details and we’ll send pricing, availability, and install guidance."
+                source="visualizer"
+                context={{
+                  door: selectedDoor?.name,
+                  doorSlug: selectedDoor?.slug,
+                  generatedImage,
+                }}
+              />
             </div>
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
@@ -289,7 +312,10 @@ function VisualizerContent() {
               <div className="lg:col-span-7 space-y-10">
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-amber-400 mb-3">Step 1</p>
-                  <h2 className="text-2xl md:text-3xl font-light text-white mb-3">Choose a door style</h2>
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-3">
+                    <h2 className="text-2xl md:text-3xl font-light text-white">Choose a door style</h2>
+                    <DoorQuizModal onSelectDoor={setSelectedDoor} />
+                  </div>
                   <DoorGallery
                     selectedDoor={selectedDoor}
                     onSelectDoor={setSelectedDoor}

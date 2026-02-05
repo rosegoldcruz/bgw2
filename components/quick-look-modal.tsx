@@ -1,11 +1,12 @@
 // components/quick-look-modal.tsx
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { X, ChevronLeft, ChevronRight, Plus } from "lucide-react"
 import { BlurPanel } from "./blur-panel"
+import { useCart } from "@/components/cart/cart-context"
 
 interface QuickLookModalProps {
   product: any
@@ -16,8 +17,16 @@ interface QuickLookModalProps {
 export function QuickLookModal({ product, isOpen, onClose }: QuickLookModalProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [selectedSwatch, setSelectedSwatch] = useState(0)
+  const [added, setAdded] = useState(false)
+  const { addItem } = useCart()
 
   if (!product) return null
+
+  useEffect(() => {
+    if (!isOpen) {
+      setAdded(false)
+    }
+  }, [isOpen])
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % product.quickLookImages.length)
@@ -25,6 +34,18 @@ export function QuickLookModal({ product, isOpen, onClose }: QuickLookModalProps
 
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + product.quickLookImages.length) % product.quickLookImages.length)
+  }
+
+  const handleAddToCart = () => {
+    addItem({
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      slug: product.slug,
+      price: typeof product.price === "number" ? product.price : 0,
+    }, 1)
+    setAdded(true)
+    setTimeout(() => setAdded(false), 2000)
   }
 
   return (
@@ -165,9 +186,10 @@ export function QuickLookModal({ product, isOpen, onClose }: QuickLookModalProps
                     className="w-full bg-neutral-900 text-white py-4 rounded-full font-medium text-lg hover:bg-neutral-800 transition-colors duration-200 flex items-center justify-center gap-2"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
+                    onClick={handleAddToCart}
                   >
                     <Plus size={20} />
-                    Add to Cart
+                    {added ? "Added to Cart" : "Add to Cart"}
                   </motion.button>
                 </div>
               </div>

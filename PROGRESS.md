@@ -41,3 +41,9 @@ Job Persistence	❌ Missing	Current jobs are lost on server restart.
     Curated collections strip and reduced card noise (radii, elevation, hover restraint).
 
     Footer simplified; emoji trust badges replaced with premium iconography.
+
+    Implemented functional demo cart with localStorage persistence, drawer, and /cart page.
+
+    Added lead capture form (name/email/phone) with demo endpoint for visualizer and cart.
+
+    Added optional door quiz modal in the visualizer flow (non-interruptive).
