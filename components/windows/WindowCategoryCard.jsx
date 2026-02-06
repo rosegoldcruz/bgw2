@@ -16,7 +16,7 @@ export function WindowCategoryCard({ category, index = 0 }) {
       <Link
         href={`/windows/${category.slug}`}
         aria-label={`Browse ${category.name}`}
-        className={`group block rounded-sm overflow-hidden border bg-neutral-950/40 backdrop-blur
+        className={`group block rounded-xl overflow-hidden border bg-neutral-950/40 backdrop-blur
           shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_24px_70px_rgba(0,0,0,0.65)]
           transition-all duration-500
           hover:-translate-y-1 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_34px_90px_rgba(0,0,0,0.75)]
@@ -67,4 +67,3 @@ export function WindowCategoryCard({ category, index = 0 }) {
     </motion.div>
   );
 }
-

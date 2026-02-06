@@ -19,7 +19,7 @@ const FEATURES = [
 export function EnergyPerformanceStrip() {
   return (
     <section
-      className="relative overflow-hidden rounded-sm border border-white/10 bg-neutral-950/60 backdrop-blur
+      className="relative overflow-hidden rounded-xl border border-white/10 bg-neutral-950/60 backdrop-blur
                  shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_30px_90px_rgba(0,0,0,0.65)]"
     >
       <div className="absolute inset-0 [background:radial-gradient(900px_circle_at_30%_20%,rgba(251,191,36,0.10),transparent_60%)]" />
@@ -46,7 +46,7 @@ export function EnergyPerformanceStrip() {
             return (
               <div
                 key={f.title}
-                className="rounded-sm border border-white/10 bg-white/[0.03] px-4 py-4
+                className="rounded-md border border-white/10 bg-white/[0.03] px-4 py-4
                            hover:bg-white/[0.05] transition-colors"
               >
                 <Icon className="w-5 h-5 text-amber-300" />
@@ -61,4 +61,3 @@ export function EnergyPerformanceStrip() {
     </section>
   );
 }
-

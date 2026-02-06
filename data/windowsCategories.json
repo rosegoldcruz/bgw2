@@ -4,9 +4,9 @@
     "name": "Energy Efficient Windows",
     "description": "Designed to reduce heat transfer and lower energy bills",
     "images": [
-      "/images/windows/energy-efficient/1.jpg",
-      "/images/windows/energy-efficient/2.jpg",
-      "/images/windows/energy-efficient/3.jpg"
+      "/windows/energy-efficient/1.jpg",
+      "/windows/energy-efficient/2.jpg",
+      "/windows/energy-efficient/3.jpg"
     ]
   },
   {
@@ -14,9 +14,9 @@
     "name": "Wood Clad Windows",
     "description": "Natural interior warmth with protected exterior durability",
     "images": [
-      "/images/windows/wood-clad/1.jpg",
-      "/images/windows/wood-clad/2.jpg",
-      "/images/windows/wood-clad/3.jpg"
+      "/windows/wood-clad/1.jpg",
+      "/windows/wood-clad/2.jpg",
+      "/windows/wood-clad/3.jpg"
     ]
   },
   {
@@ -24,9 +24,9 @@
     "name": "Wood Windows",
     "description": "Timeless craftsmanship and architectural beauty",
     "images": [
-      "/images/windows/wood/1.jpg",
-      "/images/windows/wood/2.jpg",
-      "/images/windows/wood/3.jpg"
+      "/windows/wood/1.jpg",
+      "/windows/wood/2.jpg",
+      "/windows/wood/3.jpg"
     ]
   },
   {
@@ -34,9 +34,9 @@
     "name": "Vinyl Windows",
     "description": "Low maintenance and cost-effective performance",
     "images": [
-      "/images/windows/vinyl/1.jpg",
-      "/images/windows/vinyl/2.jpg",
-      "/images/windows/vinyl/3.jpg"
+      "/windows/vinyl/1.jpg",
+      "/windows/vinyl/2.jpg",
+      "/windows/vinyl/3.jpg"
     ]
   },
   {
@@ -44,9 +44,9 @@
     "name": "Aluminum Windows",
     "description": "Slim profiles with modern strength",
     "images": [
-      "/images/windows/aluminum/1.jpg",
-      "/images/windows/aluminum/2.jpg",
-      "/images/windows/aluminum/3.jpg"
+      "/windows/aluminum/1.jpg",
+      "/windows/aluminum/2.jpg",
+      "/windows/aluminum/3.jpg"
     ]
   },
   {
@@ -54,9 +54,9 @@
     "name": "Fiberglass Windows",
     "description": "Superior stability and insulation",
     "images": [
-      "/images/windows/fiberglass/1.jpg",
-      "/images/windows/fiberglass/2.jpg",
-      "/images/windows/fiberglass/3.jpg"
+      "/windows/fiberglass/1.jpg",
+      "/windows/fiberglass/2.jpg",
+      "/windows/fiberglass/3.jpg"
     ]
   },
   {
@@ -64,9 +64,9 @@
     "name": "Obscure Glass Windows",
     "description": "Privacy without sacrificing daylight",
     "images": [
-      "/images/windows/obscure-glass/1.jpg",
-      "/images/windows/obscure-glass/2.jpg",
-      "/images/windows/obscure-glass/3.jpg"
+      "/windows/obscure-glass/1.jpg",
+      "/windows/obscure-glass/2.jpg",
+      "/windows/obscure-glass/3.jpg"
     ]
   }
 ]

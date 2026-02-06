@@ -47,3 +47,7 @@ Job Persistence	❌ Missing	Current jobs are lost on server restart.
     Added lead capture form (name/email/phone) with demo endpoint for visualizer and cart.
 
     Added optional door quiz modal in the visualizer flow (non-interruptive).
+
+    Rebuilt cabinet refacing landing/configurator UI with style row + color swatches + live preview.
+
+    Rebuilt windows landing page using curated assets and corrected window image paths.

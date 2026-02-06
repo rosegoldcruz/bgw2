@@ -4,16 +4,17 @@ export function ColorSwatches({
   colors,
   selectedColorSlug,
   onSelectColor,
+  isActive = true,
 }) {
   const entries = Object.entries(colors);
 
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className={`flex flex-wrap gap-2 ${isActive ? "" : "opacity-60"}`}>
       {entries.map(([colorSlug, color]) => {
         const isSelected = selectedColorSlug === colorSlug;
         const borderClass = isSelected
           ? "border-amber-400 ring-2 ring-amber-400/30"
-          : "border-white/10 hover:border-white/20";
+          : "border-white/20 hover:border-white/40";
 
         return (
           <button
@@ -22,15 +23,15 @@ export function ColorSwatches({
             onClick={() => onSelectColor(colorSlug)}
             aria-pressed={isSelected}
             title={color.display_name}
-            className={`relative border transition-all ${borderClass} bg-black/40`}
-            style={{ width: 120, height: 80 }}
+            className={`relative rounded-full border transition-all ${borderClass} bg-black/40`}
+            style={{ width: 36, height: 36 }}
           >
             <Image
-              src={color.hero_image}
-              alt={`${color.display_name} kitchen preview`}
+              src={color.zoom_image || color.hero_image}
+              alt={`${color.display_name} finish`}
               fill
-              sizes="120px"
-              className="object-contain object-center w-full h-full max-w-full max-h-full"
+              sizes="36px"
+              className="object-cover rounded-full"
             />
           </button>
         );
