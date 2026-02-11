@@ -14,8 +14,8 @@ const categoryImages = {
   fiberglass: "/fiberglass.png",
   slab: "/slab_doors/Aurelia Crest Slab M580C_1.jpg",
   hardware: "/hardware/ADAMS_1.jpg",
-  windows: "/fiberglass.png",
-  cabinets: "/wood.png",
+  windows: "/windows/.windows/Picture window.png",
+  cabinets: "/cabinet.png",
 };
 
 export default function ShopPage() {
