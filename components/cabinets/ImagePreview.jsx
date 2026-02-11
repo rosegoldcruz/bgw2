@@ -73,7 +73,7 @@ export function ImagePreview({
           </div>
 
           <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
-            <Link href="/visualizer?door=cabinet-refacing-configurator">
+            <Link href="/visualizer/upload?door=cabinet-refacing-configurator">
               <Button className="w-full bg-white text-neutral-950 hover:bg-white/90">
                 Visualize On Your Home
               </Button>

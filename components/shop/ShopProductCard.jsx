@@ -59,7 +59,7 @@ export function ShopProductCard({ product, index = 0 }) {
           
           {/* Visualize Button */}
           <Link 
-            href={`/visualizer?door=${product.slug}`}
+            href={`/visualizer/upload?door=${product.slug}`}
             className="mt-3 w-full flex items-center justify-center gap-2 py-2.5 px-4 
                      bg-neutral-800 hover:bg-neutral-700 text-amber-400 text-sm font-medium 
                      rounded-md transition-colors duration-300"
