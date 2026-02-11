@@ -1,6 +1,7 @@
 "use server";
 
 import { NextResponse } from "next/server";
+import { createJob, updateJob } from "@/lib/visualizer-jobs";
 
 export async function POST(request) {
   try {
@@ -83,7 +84,7 @@ export async function POST(request) {
 
     // If using "Prefer: wait", the prediction should have output directly
     if (prediction.output) {
-      return NextResponse.json({ 
+      return NextResponse.json({
         imageUrl: Array.isArray(prediction.output) ? prediction.output[0] : prediction.output,
         status: "succeeded"
       });
@@ -91,6 +92,12 @@ export async function POST(request) {
 
     // If prediction is still processing, return the prediction ID for polling
     if (prediction.id && prediction.status !== "succeeded") {
+      // Create job in store so polling works
+      const job = createJob(prediction.id);
+      job.status = prediction.status;
+      // We need to re-save because createJob sets status to 'queued' by default
+      updateJob(prediction.id, { status: prediction.status });
+
       return NextResponse.json({
         predictionId: prediction.id,
         status: prediction.status
