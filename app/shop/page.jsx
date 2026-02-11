@@ -14,7 +14,7 @@ const categoryImages = {
   fiberglass: "/fiberglass.png",
   slab: "/slab_doors/Aurelia Crest Slab M580C_1.jpg",
   hardware: "/hardware/ADAMS_1.jpg",
-  windows: "/windows/.windows/Picture window.png",
+  windows: "/doze.png",
   cabinets: "/cabinet.png",
 };
 
@@ -22,10 +22,10 @@ export default function ShopPage() {
   return (
     <main className="min-h-screen bg-neutral-950">
       <Header />
-      
+
       {/* Materials Section - Slab Collection Hero */}
       <MaterialsSection />
-      
+
       {/* Shop Categories Grid */}
       <section className="py-20 bg-neutral-950">
         <div className="max-w-7xl mx-auto px-6">
@@ -36,7 +36,7 @@ export default function ShopPage() {
               Select a collection to explore our full range of products
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {categories.map((category, index) => (
               <motion.div
@@ -76,7 +76,7 @@ export default function ShopPage() {
           </div>
         </div>
       </section>
-      
+
       <Footer />
     </main>
   );
