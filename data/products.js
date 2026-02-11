@@ -728,6 +728,17 @@ export const products = [
     specs: ["Material: Solid mahogany", "Dimensions: 12\"-42\" x 96\" x 1-3/4\"", "Glass: Not included", "Finish: Unfinished"],
     price: 395,
   },
+  {
+    id: "slab-double-leaded-75",
+    name: "Double Leaded Glass Slab",
+    slug: "double-leaded-glass-slab",
+    category: "slab",
+    image: "/bg-finals-4x/75.webp",
+    gallery: ["/bg-finals-4x/75.webp"],
+    description: "Unfinished mahogany double door slab with ornate leaded glass panels. Full-light design with scroll border detail.",
+    specs: ["Material: Solid mahogany", "Dimensions: 72\" x 80\" x 1-3/4\"", "Glass: Leaded glass included", "Finish: Unfinished"],
+    price: 2495,
+  },
 
   // ===== HARDWARE =====
   {
