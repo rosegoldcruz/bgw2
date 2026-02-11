@@ -40,7 +40,7 @@ export function CollectionStrip() {
                     src={collection.image || "/placeholder.svg"}
                     alt={collection.name}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-contain"
                     loading="lazy"
                     sizes="(max-width: 768px) 80vw, (max-width: 1280px) 40vw, 320px"
                   />

@@ -89,7 +89,7 @@ export default function ProductDetailPage() {
                 src={product.gallery[selectedImage] || product.image}
                 alt={product.name}
                 fill
-                className="object-cover"
+                className="object-contain"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
@@ -112,7 +112,7 @@ export default function ProductDetailPage() {
                       src={img}
                       alt={`${product.name} view ${index + 1}`}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       sizes="80px"
                     />
                   </button>
@@ -255,7 +255,7 @@ export default function ProductDetailPage() {
                     src={relatedProduct.image}
                     alt={relatedProduct.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                 </div>

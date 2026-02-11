@@ -27,7 +27,7 @@ export function ShopProductCard({ product, index = 0 }) {
               src={product.image}
               alt={product.name}
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-contain"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             
