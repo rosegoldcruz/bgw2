@@ -169,10 +169,27 @@ function UploadContent() {
 
     if (!data?.jobId) {
       setIsLoading(false);
-      setError("Unable to start visualization. Please try again.");
+      setError(data?.error || "Unable to start visualization. Please try again.");
       return;
     }
 
+    // If the server already completed the job (awaited processJob),
+    // the response will contain the imageUrl directly
+    if (data.status === "completed" && data.imageUrl) {
+      setGeneratedImage(data.imageUrl);
+      setIsLoading(false);
+      return;
+    }
+
+    // If the job failed server-side
+    if (data.status === "failed") {
+      setIsLoading(false);
+      setError("Generation failed. Please try again.");
+      setJobStatus("failed");
+      return;
+    }
+
+    // Fallback: poll for status (shouldn't normally reach here now)
     setJobId(data.jobId);
     setJobStatus(data.status || "queued");
     startPolling(data.jobId);

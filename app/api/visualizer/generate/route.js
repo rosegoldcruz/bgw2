@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
-import { createJob, updateJob } from "@/lib/visualizer-jobs";
+import { createJob, updateJob, getJob } from "@/lib/visualizer-jobs";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 120; // Allow up to 2 minutes for Replicate
 
 const REPLICATE_URL = "https://api.replicate.com/v1/predictions";
 
@@ -127,10 +128,17 @@ export async function POST(request) {
   const body = await request.json().catch(() => ({}));
   const { homeImageUrl, doorImageUrl } = body || {};
 
-  processJob(job.id, { homeImageUrl, doorImageUrl });
+  // CRITICAL: await processJob so the serverless function stays alive
+  // until Replicate finishes. Without await, the function exits immediately
+  // and the job never completes.
+  await processJob(job.id, { homeImageUrl, doorImageUrl });
+
+  // Read the final job state from the store
+  const finalJob = getJob(job.id);
 
   return NextResponse.json({
     jobId: job.id,
-    status: "queued",
+    status: finalJob?.status || "failed",
+    imageUrl: finalJob?.imageUrl || null,
   });
 }
