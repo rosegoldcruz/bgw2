@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
-import { createJob, updateJob, getJob } from "@/lib/visualizer-jobs";
 
 export const dynamic = "force-dynamic";
-export const maxDuration = 120; // Allow up to 2 minutes for Replicate
 
 const REPLICATE_URL = "https://api.replicate.com/v1/predictions";
 
@@ -12,79 +10,33 @@ const BASE_PROMPT =
 const NEGATIVE_PROMPT =
   "people, hands, tools, construction, distortion, warped geometry, incorrect perspective, mismatched lighting, blur, low resolution, artifacts, watermark, logo, text, extra objects";
 
-async function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function fetchPredictionStatus(predictionId, token) {
-  const response = await fetch(`${REPLICATE_URL}/${predictionId}`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-    },
-  });
-
-  if (!response.ok) {
-    return null;
-  }
-
-  return response.json().catch(() => null);
-}
-
-async function pollPrediction(jobId, predictionId, token) {
-  const maxAttempts = 90;
-
-  for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
-    await delay(2000);
-    const prediction = await fetchPredictionStatus(predictionId, token);
-
-    if (!prediction?.status) {
-      updateJob(jobId, { status: "processing" });
-      continue;
-    }
-
-    if (prediction.status === "succeeded") {
-      const imageUrl = Array.isArray(prediction.output)
-        ? prediction.output[0]
-        : prediction.output;
-      updateJob(jobId, { status: "completed", imageUrl: imageUrl || null });
-      return;
-    }
-
-    if (prediction.status === "failed" || prediction.status === "canceled") {
-      updateJob(jobId, { status: "failed", imageUrl: null });
-      return;
-    }
-
-    updateJob(jobId, { status: "processing" });
-  }
-
-  updateJob(jobId, { status: "failed", imageUrl: null });
-}
-
-async function processJob(jobId, { homeImageUrl, doorImageUrl }) {
-  const fail = () => updateJob(jobId, { status: "failed", imageUrl: null });
+export async function POST(request) {
+  const body = await request.json().catch(() => ({}));
+  const { homeImageUrl, doorImageUrl } = body || {};
 
   if (!homeImageUrl || !doorImageUrl) {
-    fail();
-    return;
+    return NextResponse.json(
+      { error: "Both home and door images are required." },
+      { status: 400 }
+    );
   }
 
   const replicateToken = process.env.REPLICATE_API_TOKEN;
   if (!replicateToken) {
-    fail();
-    return;
+    return NextResponse.json(
+      { error: "Replicate API token not configured." },
+      { status: 500 }
+    );
   }
 
-  updateJob(jobId, { status: "processing" });
-
   try {
+    // Submit prediction to Replicate WITHOUT "Prefer: wait"
+    // This returns almost instantly with a prediction ID
     const response = await fetch(REPLICATE_URL, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${replicateToken}`,
         "Content-Type": "application/json",
-        Prefer: "wait",
       },
       body: JSON.stringify({
         version: "google/nano-banana",
@@ -97,48 +49,25 @@ async function processJob(jobId, { homeImageUrl, doorImageUrl }) {
     });
 
     if (!response.ok) {
-      fail();
-      return;
+      const errorData = await response.json().catch(() => ({}));
+      return NextResponse.json(
+        { error: errorData.detail || "Failed to start visualization." },
+        { status: response.status }
+      );
     }
 
-    const prediction = await response.json().catch(() => null);
+    const prediction = await response.json();
 
-    if (prediction?.output) {
-      const imageUrl = Array.isArray(prediction.output)
-        ? prediction.output[0]
-        : prediction.output;
-      updateJob(jobId, { status: "completed", imageUrl: imageUrl || null });
-      return;
-    }
-
-    if (prediction?.id) {
-      await pollPrediction(jobId, prediction.id, replicateToken);
-      return;
-    }
-
-    fail();
-  } catch {
-    fail();
+    // Return the Replicate prediction ID directly
+    // The status endpoint will use this to poll Replicate
+    return NextResponse.json({
+      jobId: prediction.id,
+      status: "processing",
+    });
+  } catch (err) {
+    return NextResponse.json(
+      { error: "Failed to start visualization." },
+      { status: 500 }
+    );
   }
-}
-
-export async function POST(request) {
-  const job = createJob();
-
-  const body = await request.json().catch(() => ({}));
-  const { homeImageUrl, doorImageUrl } = body || {};
-
-  // CRITICAL: await processJob so the serverless function stays alive
-  // until Replicate finishes. Without await, the function exits immediately
-  // and the job never completes.
-  await processJob(job.id, { homeImageUrl, doorImageUrl });
-
-  // Read the final job state from the store
-  const finalJob = getJob(job.id);
-
-  return NextResponse.json({
-    jobId: job.id,
-    status: finalJob?.status || "failed",
-    imageUrl: finalJob?.imageUrl || null,
-  });
 }
